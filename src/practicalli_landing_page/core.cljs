@@ -1,26 +1,49 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Practicalli Website
+;;
+;; A ClojureScript single page app with reagent
+;; Created with Leinigen figwheel-main template
+;; https://practicalli.github.io
+;;
+;; Author(s): John Stevenson
+;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
 (ns ^:figwheel-hooks practicalli-landing-page.core
   (:require
    [goog.dom :as gdom]
    [reagent.core :as reagent :refer [atom]]))
 
-(println "This text is printed from src/practicalli_landing_page/core.cljs. Go ahead and edit it and see reloading in action.")
 
-(defn multiply [a b] (* a b))
+(println (js/Date.) "Reloading: src/practicalli_landing_page/core.cljs")
 
+
+;; Application State
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; define your app data so that it doesn't get over-written on reload
 (defonce app-state (atom {:text "Hello world!"}))
 
-(defn get-app-element []
-  (gdom/getElement "app"))
 
-(defn hello-world []
+;; Website structure
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(defn main-page []
   [:div
    [:h1 (:text @app-state)]
    [:h3 "Edit this in src/practicalli_landing_page/core.cljs and watch it change!"]])
 
+
+;; System configuration code
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
 (defn mount [el]
-  (reagent/render-component [hello-world] el))
+  (reagent/render-component [main-page] el))
+
+(defn get-app-element []
+  (gdom/getElement "app"))
 
 (defn mount-app-element []
   (when-let [el (get-app-element)]
