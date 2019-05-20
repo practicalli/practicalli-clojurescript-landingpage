@@ -13,7 +13,8 @@
 (ns ^:figwheel-hooks practicalli-landing-page.core
   (:require
    [goog.dom :as gdom]
-   [reagent.core :as reagent :refer [atom]]))
+   [reagent.core :as reagent :refer [atom]]
+   [practicalli-landing-page.content :as content]))
 
 
 (println (js/Date.) "Reloading: src/practicalli_landing_page/core.cljs")
@@ -29,59 +30,15 @@
 ;; Website structure
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(defn title-banner
-  "Top banner and navigation for the website"
-  []
-  [:section {:class "section"}
-   [:div {:class "container"}
-    [:div {:class "columns"}
-     [:div {:class "column"}
-      [:img {:src "images/practicalli-website-banner-logos.png"}]]
-     ]]])
-
-(defn navigation-fixed
-  []
-  [:nav {:class      "navbar is-fixed-top is-success"
-         :role       "navigation"
-         :aria-label "main navigation"}
-   [:div {:class "container"}
-    [:div {:class "navbar-brand"}
-     [:a {:class "navbar-item"
-          :href  "/"}
-      [:img {:src "images/practicalli-logo.png"}]]
-     [:span {:class       "navbar-burger burger"
-             :data-target "navbarPracticalli"}
-      ;; Empty spans needed for navbar burger
-      [:span][:span][:span]]]
-    [:div {:id    "navbarPracticalli"
-           :class "navbar-menu"}
-     [:div {:class "navbar-start"}
-      [:a {:class "navbar-item"
-           :href  "#overview"} "Overview"]
-      [:a {:class "navbar-item"
-           :href  "#donate"} "Donate"]
-      [:a {:class "navbar-item"
-           :href  "#study-group"} "Study Group"]
-      [:a {:class "navbar-item"
-           :href  "#broadcasts"} "Broadcasts"]
-      [:a {:class "navbar-item"
-           :href  "#guides"} "Guides"]
-      [:a {:class "navbar-item"
-           :href  "#resources"} "resources"]
-      [:span {:class "navbar-item"}
-       [:a {:class  "button is-inverted"
-            :target "_blank"
-            :href   "https://github.com/practicalli/practicalli-landing-page"}
-        [:span {:class "icon"}
-         [:i {:class "fab fa-github"}]]
-        [:span "Issues/PRs"]]]]]]])
-
 
 (defn main-page
   []
   [:div
-   [title-banner]
-   [navigation-fixed]])
+   [content/navigation-fixed]
+
+   [content/title-banner]
+
+   ])
 
 
 
