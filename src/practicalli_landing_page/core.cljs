@@ -37,10 +37,12 @@
           :playlists
           {:study-group-jr0cket
            "https://www.youtube.com/watch?v=MZcuL4lRw5E&list=PLy9I_IfUBzKJSgctCJaRYcnF6kZdiZ5ku"}}
-         :support-channels {:patreon   {:url  "https://www.patreon.com/practicalli"
-                                        :logo "images/patreon-navy.png"}
-                            :paypal-me {:url  "https://www.paypal.me/practicalli"
-                                        :logo "images/paypal-me-logo.png"}}}))
+         :support-channels {:patreon     {:url  "https://www.patreon.com/practicalli"
+                                          :logo "images/patreon-navy.png"}
+                            :paypal-me   {:url  "https://paypal.me/practicalli"
+                                          :logo "images/paypal-me-logo.png"}
+                            :kickstarter {:url  "/"
+                                          :logo "images/kickstarter-logo.jpeg"}}}))
 
 
 ;; Website structure

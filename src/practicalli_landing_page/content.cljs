@@ -147,27 +147,39 @@
     [:div {:class "columns"}
 
      [:div {:class "column"}
-      [:h3 {:class "title has-text-centered"}
-       "Ways to support further content from Practicalli"]
+      [:h2 {:class "title has-text-centered"}
+       "Support Practicalli"]
+      [:h3 {:class "subtitle has-text-centered"}
+       "Help me create more content for everyone.  Constructive feedback and financial support is always welcome."]
 
-      [:div {:class "columns"}
-       [:div {:class "column is-2 is-offset-2"}
-        [:a {:href   (get-in support-channels [:paypal-me :url])
-             :target "_blank"}
-         [:figure {:class "image is-128x128"}
-          [:img {:src (get-in support-channels [:paypal-me :logo])}]]]]
+      [:div {:class "columns is-vcentered"}
 
-       [:div {:class "column is-2 is-offset-2"}
-        [:a {:href   (get-in support-channels [:patreon :url])
-             :target "_blank"}
-         [:figure {:class "image is-128x128"}
-          [:img {:src (get-in support-channels [:patreon :logo])}]]]]
-
-       [:div {:class "column is-2 is-offset-2"}
+       [:div {:class "column"}
         [:a {:href   "http://yt.vu/+practicalli"
              :target "_blank"}
-         [:figure {:class "image is-128x128"}
+         [:figure {:class "image"}
           [:img {:src "images/youtube-subscribe-button.jpg"}]]]]
+
+       [:div {:class "column"}
+        [:a {:href   (get-in support-channels [:paypal-me :url])
+             :target "_blank"}
+         [:figure {:class "image"}
+          [:img {:src (get-in support-channels [:paypal-me :logo])}]]]]
+
+       [:div {:class "column"}
+        [:a {:href   (get-in support-channels [:patreon :url])
+             :target "_blank"}
+         [:figure {:class "image"}
+          [:img {:src (get-in support-channels [:patreon :logo])}]]]]
+
+       [:div {:class "column"}
+        [:h {:class "title is-4 has-text-centered"}
+         "Specific campaigns coming soon!"]
+        [:a {:href   (get-in support-channels [:kickstarter :url])
+             :target "_blank"}
+         [:figure {:class "image"}
+          [:img {:src (get-in support-channels [:kickstarter :logo])}]]]]
+
        ]]]]])
 
 
