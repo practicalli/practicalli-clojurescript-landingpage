@@ -62,6 +62,8 @@
    [content/level-separator "books"]
    [content/books]
 
+   [content/level-separator "videos"]
+   [content/videos]
 
    [content/level-separator "contact"]
    [content/contact]

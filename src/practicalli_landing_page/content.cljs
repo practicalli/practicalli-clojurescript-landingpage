@@ -140,6 +140,31 @@
        ]]]]]
   )
 
+(defn videos
+  "Ways in which you can contact Practicalli"
+  []
+  [:div {:class "container"}
+   [:div {:class "box"}
+    [:div {:class "columns"}
+
+     [:div {:class "column"}
+      [:h2 {:class "title has-text-centered"}
+       "Videos and Screencasts"]
+
+      [:div {:class "columns is-vcentered"}
+
+       [:div {:class "column"}
+        [:h3 {:class "subtitle has-text-centered"}
+         "Currently re-organising all the Practicalli video content to make it easier to find on YouTube"]
+
+
+        [:a {:href   "https://jiescribano.files.wordpress.com/2017/03/workinprogress.jpg"
+             :target "_blank"}
+         [:figure {:class "image"}
+          [:img {:src "images/clojurians-slack-invite.png"}]]]]
+
+       ]]]]])
+
 (defn support-practicalli
   "Ways in which you can support Practicalli"
   [support-channels]
