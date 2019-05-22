@@ -65,14 +65,14 @@
   []
   [:section {:class "section"}
    [:div {:class "container"}
-    [:div {:class "columns"}
+    [:div {:class "columns is-vcentered"}
 
-     [:div {:class "column is-2 is-offset-2"}
+     [:div {:class "column is-2 is-offset-1"}
       [:img {:src   "images/practicalli-logo.png"
              :width "160px"}]]
 
      [:div {:class "column"}
-      [:h1 {:class "title"}
+      [:h1 {:class "title is-1"}
        "Practicalli"]
       [:h3 {:class "subtitle"}
        "Practical approaches to learning Functional Programming with Clojure"]
