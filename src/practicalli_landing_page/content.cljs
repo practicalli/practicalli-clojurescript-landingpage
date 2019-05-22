@@ -156,22 +156,24 @@
     [:div {:class "columns"}
 
      [:div {:class "column"}
-      [:h2 {:class "title has-text-centered"}
-       "Videos and Screencasts"]
 
-      [:div {:class "columns is-vcentered"}
+      [:a {:href   "http://yt.vu/+practicalli"
+           :target "_blank"}
+       [:h2 {:class "title has-text-centered"}
+        "Videos and Screencasts"]
+       [:h3 {:class "subtitle has-text-centered"}
+        "Currently re-organising all the Practicalli video content to make it easier to find on YouTube"]]
 
-       [:div {:class "column"}
-        [:h3 {:class "subtitle has-text-centered"}
-         "Currently re-organising all the Practicalli video content to make it easier to find on YouTube"]
+      [:div {:class "columns"}
+       [:div {:class "column is-half is-offset-3"}
 
-
-        [:a {:href   "https://jiescribano.files.wordpress.com/2017/03/workinprogress.jpg"
+        [:a {:href   "http://yt.vu/+practicalli"
              :target "_blank"}
          [:figure {:class "image"}
-          [:img {:src "images/clojurians-slack-invite.png"}]]]]
+          [:img {:src "images/practicalli-banner-icons-only.png"}]]]]
 
        ]]]]])
+
 
 (defn support-practicalli
   "Ways in which you can support Practicalli"
