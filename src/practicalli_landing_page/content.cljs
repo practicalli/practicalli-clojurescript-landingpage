@@ -70,3 +70,35 @@
       [:div {:div "content"}
        "YouTube broadcasts, screencasts and online guides to support you in your journey into Clojure and development tools"]]
      ]]])
+
+(defn support-practicalli
+  "Ways in which you can support Practicalli"
+  [support-channels]
+  [:div {:class "container"}
+   [:div {:class "box"}
+    [:div {:class "columns"}
+
+     [:div {:class "column"}
+      [:h3 {:class "title has-text-centered"}
+       "Ways to support further content from Practicalli"]
+
+      [:div {:class "columns"}
+       [:div {:class "column is-2 is-offset-2"}
+        [:a {:href   (get-in support-channels [:paypal-me :url])
+             :target "_blank"}
+         [:figure {:class "image is-128x128"}
+          [:img {:src (get-in support-channels [:paypal-me :logo])}]]]]
+
+       [:div {:class "column is-2 is-offset-2"}
+        [:a {:href   (get-in support-channels [:patreon :url])
+             :target "_blank"}
+         [:figure {:class "image is-128x128"}
+          [:img {:src (get-in support-channels [:patreon :logo])}]]]]
+
+       [:div {:class "column is-2 is-offset-2"}
+        [:a {:href   "http://yt.vu/+practicalli"
+             :target "_blank"}
+         [:figure {:class "image is-128x128"}
+          [:img {:src "images/youtube-subscribe-button.jpg"}]]]]
+       ]]]]])
+
