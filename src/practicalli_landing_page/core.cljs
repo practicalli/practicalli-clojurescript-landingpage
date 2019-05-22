@@ -16,6 +16,8 @@
    [reagent.core :as reagent :refer [atom]]
    [practicalli-landing-page.content :as content]))
 
+;; simple debug statement for each build
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (println (js/Date.) "Reloading: src/practicalli_landing_page/core.cljs")
 
@@ -70,12 +72,13 @@
 ;; System configuration code
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+(defn get-app-element []
+  (gdom/getElement "app"))
+
 
 (defn mount [el]
   (reagent/render-component [main-page] el))
 
-(defn get-app-element []
-  (gdom/getElement "app"))
 
 (defn mount-app-element []
   (when-let [el (get-app-element)]
@@ -91,4 +94,17 @@
   ;; optionally touch your app-state to force rerendering depending on
   ;; your application
   ;; (swap! app-state update-in [:__figwheel_counter] inc)
-)
+  )
+
+
+#_(reset! app-state
+          {:text "Hello world!"
+           :youtube
+           {:channels
+            {:practicalli
+             "https://www.youtube.com/channel/UCLsiVY-kWVH1EqgEtZiREJw"
+             :jr0cket
+             "http://yt.vu/+jr0cket"}
+            :playlists
+            {:study-group-jr0cket
+             "https://www.youtube.com/watch?v=MZcuL4lRw5E&list=PLy9I_IfUBzKJSgctCJaRYcnF6kZdiZ5ku"}}})
