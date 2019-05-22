@@ -82,30 +82,29 @@
 
 
 
-
-
 (defn study-group
   [youtube-links]
   [:div {:class "container"}
    [:div {:class "box"}
-    [:div {:class "columns"}
+    [:div {:class "columns is-vcentered"}
      [:div {:class "column"}
       [:figure {:class "image"}
-       [:img {:src "images/practicalli-study-group.png"}]]]
+       [:img {:src "images/practicalli-study-group-youtube-live.png"}]]]
 
      [:div {:class "column"}
       [:div {:class "content"}
-       [:h2 "Clojure Study Group "]
        [:p
         [:a {:href   (get-in youtube-links [:channels :practicalli] )
              :target "_blank"}
          "Live broadcasts"]
-        " each weekend covering a specific aspect of Clojure or ClojureScript."]
+        " each Saturday 10:00 (UK, UTC+1), each covering a specific aspect of Clojure or ClojureScript."]
        [:p
         [:a {:href (get-in youtube-links [:playlists :study-group-jr0cket] )}
-         "Clojure study group playlist"]
-        " contains recordings of all previous broadcasts"]]]]]])
-
+         "The study group playlist"]
+        " contains recordings of all previous broadcasts.  A "
+        [:a {:href "https://practicalli.github.io/clojure-study-group/"}
+         "study group page" ]
+        " is being built in ClojureScript to help you find videos easily"]]]]]])
 
 
 (defn books
