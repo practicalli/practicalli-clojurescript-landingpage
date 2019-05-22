@@ -52,6 +52,8 @@
 
    [content/title-banner]
 
+   [content/level-separator "study-group"]
+   [content/study-group (get @app-state :youtube)]
 
    [content/level-separator "books"]
    [content/books]
