@@ -71,6 +71,48 @@
        "YouTube broadcasts, screencasts and online guides to support you in your journey into Clojure and development tools"]]
      ]]])
 
+
+
+(defn books
+  []
+  [:div {:class "container"}
+   [:div {:class "box"}
+
+    [:div {:class "columns"}
+     [:div {:class "column"}
+      [:h2 {:class "title has-text-centered"}
+       "Free Books online - work in progress"]
+      [:div {:class "columns"}
+       [:div {:class "column"}
+        [:a {:href "https://practicalli.github.io/clojure/"}
+         [:figure {:class "image"}
+          [:img {:src "images/practicalli-clojure-book-cover.png"}]]]
+        [:p {:class "has-text-centered"}
+         "Learn the Clojure language"]]
+
+       [:div {:class "column"}
+        [:a {:href "https://practicalli.github.io/clojure-webapps/"}
+         [:figure {:class "image"}
+          [:img {:src "images/practicalli-clojure-webapps-book-cover.png"}]]]
+        [:p {:class "has-text-centered"}
+         "Build Clojure webapps and API's"]]
+
+       [:div {:class "column"}
+        [:a {:href "https://practicalli.github.io/clojurescript/"}
+         [:figure {:class "image"}
+          [:img {:src "images/practicalli-clojurescript-book-cover.png"}]]]
+        [:p {:class "has-text-centered"}
+         "Learn ClojureScript for websites, dynamic UI's and mobile apps"]]
+
+       [:div {:class "column"}
+        [:a {:href "https://practicalli.github.io/spacemacs/"}]
+        [:figure {:class "image"}
+         [:img {:src "images/practicalli-spacemacs-book-cover.png"}]]
+        [:p {:class "has-text-centered"}
+         "Clojure development with Spacemacs"]]
+       ]]]]]
+  )
+
 (defn support-practicalli
   "Ways in which you can support Practicalli"
   [support-channels]

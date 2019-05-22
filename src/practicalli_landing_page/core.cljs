@@ -53,6 +53,9 @@
    [content/title-banner]
 
 
+   [content/level-separator "books"]
+   [content/books]
+
    [content/level-separator "support"]
    [content/support-practicalli (get @app-state :support-channels)]
    ])
