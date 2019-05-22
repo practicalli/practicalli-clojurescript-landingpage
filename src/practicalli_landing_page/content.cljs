@@ -28,20 +28,28 @@
     [:div {:id    "navbarPracticalli"
            :class "navbar-menu"}
      [:div {:class "navbar-start"}
+
       [:a {:class "navbar-item"
            :href  "#overview"} "Overview"]
 
       [:a {:class "navbar-item"
            :href  "#study-group"} "Study Group"]
+
+      [:a {:class "navbar-item"
+           :href  "#books"} "Books"]
+
       [:a {:class "navbar-item"
            :href  "#videos"} "Videos"]
+
       [:a {:class "navbar-item"
            :href  "#contact"} "Contact"]
 
       [:a {:class "navbar-item"
            :href  "#support"} "Support"]
+
       [:a {:class "navbar-item"
            :href  "#resources"} "Resources"]
+
       [:span {:class "navbar-item"}
        [:a {:class  "button is-inverted"
             :target "_blank"
