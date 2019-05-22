@@ -233,17 +233,16 @@
 
       [:div {:class "columns is-vcentered"}
 
-       [:div {:class "column"}
+       [:div {:class "column is-3 is-offset-2"}
         [:h3 {:class "subtitle has-text-centered"}
          "Clojurians Slack Community: #practicalli for general discussions and #study-group for specific help"]
-
 
         [:a {:href   "http://clojurians.net"
              :target "_blank"}
          [:figure {:class "image"}
           [:img {:src "images/clojurians-slack-invite.png"}]]]]
 
-       [:div {:class "column"}
+       [:div {:class "column is-3"}
         [:a {:href   "https://github.com/practicalli"
              :target "_blank"}
          [:h3 {:class "subtitle has-text-centered"}
@@ -251,7 +250,7 @@
          [:figure {:class "image"}
           [:img {:src "images/Octocat.png"}]]]]
 
-       [:div {:class "column"}
+       [:div {:class "column is-3"}
         [:a {:href   "https://twitter.com/practical_li"
              :target "_blank"}
          [:figure {:class "image"}
