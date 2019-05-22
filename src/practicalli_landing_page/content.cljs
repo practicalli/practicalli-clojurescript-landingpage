@@ -171,6 +171,94 @@
        ]]]]])
 
 
+(defn resources
+  "Useful resources during the workshop.
+
+  Where to go next after the workshop."
+  []
+  [:div {:class "container"}
+   [:div {:class "box"}
+    [:div {:class "columns"}
+
+     [:div {:class "column"}
+      [:h4 {:class "title is-4"} "Resources"]
+      [:table {:class "table"}
+       [:tbody
+        [:tr
+         [:th
+          [:a {:href "https://clojuredocs.org/"} "Clojure docs"]]
+         [:td "docs for functions"]]
+        [:tr
+         [:th
+          [:a {:href "https://clojure.org/"} "Clojure.org"]]
+         [:td "language and concepts"]]
+        [:tr
+         [:th
+          [:a {:href "https://clojure.org/"} "CljDocs"]]
+         [:td "search library docs"]]]]]
+
+     [:div {:class "column"}
+      [:h4 {:class "title is-4"} "Practising"]
+      [:table {:class "table"}
+       [:tbody
+        [:tr
+         [:th
+          [:a {:href "http://www.4clojure.com/"} "4Clojure"]]
+         [:td "learn Clojure functions"]]
+        [:tr
+         [:th
+          [:a {:href "https://exercism.io/tracks/clojure"} "Exercism"]
+          ]
+         [:td "code practice & mentorship"]]
+        [:tr
+         [:th
+          [:a {:href "https://www.codewars.com/?language=clojure"} "Code Wars"]]
+         [:td "real coding challenges"]]
+        [:tr
+         [:th
+          [:a {:href "https://www.codingame.com/"} "CodinGame"]]
+         [:td "practice & learn the fun way"]]]]]
+
+     [:div {:class "column"}
+      [:h4 {:class "title is-4"} "Online books"]
+      [:table {:class "table"}
+       [:tbody
+        [:tr
+         [:th
+          [:a {:href "https://github.com/clojure-cookbook/clojure-cookbook"} "Clojure Cookbook"]]]
+        [:tr
+         [:th
+          [:a {:href "http://practicalli.github.io/"} "Practicalli Clojure"]]]
+        [:tr
+         [:th
+          [:a {:href "http://funcool.github.io/clojurescript-unraveled/"} "ClojureScript Unraveled"]]]
+        [:tr
+         [:th
+          [:a {:href "https://www.braveclojure.com/clojure-for-the-brave-and-true/"} "Brave Clojure"]]]]]]
+
+     [:div {:class "column"}
+      [:h4 {:class "title is-4"} "Videos"]
+      [:table {:class "table"}
+       [:tbody
+        [:tr
+         [:th
+          [:a {:href "https://www.youtube.com/user/ClojureTV"} "Clojure TV"]]
+         [:td "conference talks"]]
+        [:tr
+         [:th
+          [:a {:href "https://www.youtube.com/watch?v=9A9qsaZZefw&list=PLAC43CFB134E85266"} "Clojure Language"]]
+         [:td "describing language concepts"]]
+        [:tr
+         [:th
+          [:a {:href "https://www.youtube.com/watch?v=MZcuL4lRw5E&list=PLy9I_IfUBzKJSgctCJaRYcnF6kZdiZ5ku"} "Practicalli study group"]]
+         [:td "weekly practical lessons"]]
+        [:tr
+         [:th
+          [:a {:href "http://www.parens-of-the-dead.com/"} "Parens of the dead"]]
+         [:td "a card game in Clojure"]]]]]]]])
+
+
+
 ;; helper functions
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
