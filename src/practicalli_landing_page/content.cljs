@@ -36,7 +36,8 @@
       [:a {:class "navbar-item"
            :href  "#videos"} "Videos"]
       [:a {:class "navbar-item"
-           :href  "#books"} "Books"]
+           :href  "#contact"} "Contact"]
+
       [:a {:class "navbar-item"
            :href  "#support"} "Support"]
       [:a {:class "navbar-item"
@@ -181,6 +182,49 @@
           [:img {:src (get-in support-channels [:kickstarter :logo])}]]]]
 
        ]]]]])
+
+
+
+(defn contact
+  "Ways in which you can contact Practicalli"
+  []
+  [:div {:class "container"}
+   [:div {:class "box"}
+    [:div {:class "columns"}
+
+     [:div {:class "column"}
+      [:h2 {:class "title has-text-centered"}
+       "Contact and Feedback"]
+
+      [:div {:class "columns is-vcentered"}
+
+       [:div {:class "column"}
+        [:h3 {:class "subtitle has-text-centered"}
+         "Clojurians Slack Community: #practicalli for general discussions and #study-group for specific help"]
+
+
+        [:a {:href   "http://clojurians.net"
+             :target "_blank"}
+         [:figure {:class "image"}
+          [:img {:src "images/clojurians-slack-invite.png"}]]]]
+
+       [:div {:class "column"}
+        [:a {:href   "https://github.com/practicalli"
+             :target "_blank"}
+         [:h3 {:class "subtitle has-text-centered"}
+          "Github Practicalli Organisation"]
+         [:figure {:class "image"}
+          [:img {:src "images/Octocat.png"}]]]]
+
+       [:div {:class "column"}
+        [:a {:href   "https://twitter.com/practical_li"
+             :target "_blank"}
+         [:figure {:class "image"}
+          [:img {:src "images/twitter-practicalli-username.png"}]]]]
+
+       ]]]]])
+
+
 
 
 (defn resources

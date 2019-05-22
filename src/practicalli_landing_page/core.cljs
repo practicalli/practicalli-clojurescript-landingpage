@@ -62,6 +62,10 @@
    [content/level-separator "books"]
    [content/books]
 
+
+   [content/level-separator "contact"]
+   [content/contact]
+
    [content/level-separator "support"]
    [content/support-practicalli (get @app-state :support-channels)]
 
