@@ -1,14 +1,33 @@
 # practicalli-landing-page
 
-FIXME: Write a one-line description of your library/project.
+The website brings together all the content created for the Practicalli series on Functional programming with Clojure.
 
 ## Overview
 
-FIXME: Write a paragraph about the library/project and highlight its goals.
+This web page was created with ClojureScript, reagent, figwheel-main and Bulma CSS framework.
+
+The project was created with Leiningen build tool and using the figwheel-main template, with reagent option.
+
+`lein new figwheel-main` practicalli-landing-page -- --reagent
 
 ## Development
 
 To get an interactive development environment run:
+
+### Run via Spacemacs
+
+Open one of the ClojureScript source code files, e.g. `src/practicalli_landing_page/core.cljs`
+
+`, "` or `, s I` will run the `clojurescript-jack-in` function.
+
+When prompted, select `figwheel-main`
+
+Enter `dev` as the profile when prompted
+
+
+### Run via the command line
+
+Open a terminal and run the following command to start a REPL
 
     lein fig:build
 
@@ -22,16 +41,39 @@ and you should see an alert in the browser window.
 
 To clean all compiled files:
 
-	lein clean
+    lein clean
 
 To create a production build run:
 
-	lein clean
-	lein fig:min
+    lein clean
+    lein fig:min
+
+### Deploying to Test
+
+Copy the following files and directories to the `/docs` directory:
+
+- `resources/public/index.html`
+- `resources/public/css`
+- `resources/public/images`
+
+Also copy the following file to `/docs/cljs-out/` directory
+
+- `resources/public/cljs-out/dev-main.js`
+
+
+### Deploy to Live
+
+Clone the `practicalli.github.io` repository
+
+`git clone git@github.com:practicalli/practicalli.github.io.git`
+
+Copy all files and directories from the `/docs` directory to the root of that repository.
+
+`cp -r ../practicalli-landing-page/docs/* .`
 
 
 ## License
 
-Copyright © 2018 FIXME
+Copyright © 2019 Practicalli / jr0cket
 
-Distributed under the Eclipse Public License either version 1.0 or (at your option) any later version.
+Distributed under the Creative Commons Attribution Share-Alike 4.0 International
