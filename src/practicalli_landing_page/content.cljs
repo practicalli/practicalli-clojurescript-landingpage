@@ -139,9 +139,9 @@
          "Learn ClojureScript for websites, dynamic UI's and mobile apps"]]
 
        [:div {:class "column"}
-        [:a {:href "https://practicalli.github.io/spacemacs/"}]
-        [:figure {:class "image"}
-         [:img {:src "images/practicalli-spacemacs-book-cover.png"}]]
+        [:a {:href "https://practicalli.github.io/spacemacs/"}
+         [:figure {:class "image"}
+          [:img {:src "images/practicalli-spacemacs-book-cover.png"}]]]
         [:p {:class "has-text-centered"}
          "Clojure development with Spacemacs"]]
        ]]]]]
