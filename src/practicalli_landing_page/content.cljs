@@ -93,18 +93,25 @@
 
      [:div {:class "column"}
       [:div {:class "content"}
+
        [:p
         [:a {:href   (get-in youtube-links [:channels :practicalli] )
              :target "_blank"}
          "Live broadcasts"]
         " each Saturday 10:00 (UK, UTC+1), each covering a specific aspect of Clojure or ClojureScript."]
+
        [:p
         [:a {:href (get-in youtube-links [:playlists :study-group-jr0cket] )}
          "The study group playlist"]
         " contains recordings of all previous broadcasts.  A "
-        [:a {:href "https://practicalli.github.io/clojure-study-group/"}
+        [:a {:href "https://practicalli.github.io/clojure-study-group/"
+             :target "_blank"}
          "study group page" ]
-        " is being built in ClojureScript to help you find videos easily"]]]]]])
+        " is being built in ClojureScript to help you find videos easily"]
+
+       ]]]]])
+
+
 
 
 (defn books
@@ -118,28 +125,32 @@
        "Free Books online - work in progress"]
       [:div {:class "columns"}
        [:div {:class "column"}
-        [:a {:href "https://practicalli.github.io/clojure/"}
+        [:a {:href   "https://practicalli.github.io/clojure/"
+             :target "_blank"}
          [:figure {:class "image"}
           [:img {:src "images/practicalli-clojure-book-cover.png"}]]]
         [:p {:class "has-text-centered"}
          "Learn the Clojure language"]]
 
        [:div {:class "column"}
-        [:a {:href "https://practicalli.github.io/clojure-webapps/"}
+        [:a {:href   "https://practicalli.github.io/clojure-webapps/"
+             :target "_blank"}
          [:figure {:class "image"}
           [:img {:src "images/practicalli-clojure-webapps-book-cover.png"}]]]
         [:p {:class "has-text-centered"}
          "Build Clojure webapps and API's"]]
 
        [:div {:class "column"}
-        [:a {:href "https://practicalli.github.io/clojurescript/"}
+        [:a {:href   "https://practicalli.github.io/clojurescript/"
+             :target "_blank"}
          [:figure {:class "image"}
           [:img {:src "images/practicalli-clojurescript-book-cover.png"}]]]
         [:p {:class "has-text-centered"}
          "Learn ClojureScript for websites, dynamic UI's and mobile apps"]]
 
        [:div {:class "column"}
-        [:a {:href "https://practicalli.github.io/spacemacs/"}
+        [:a {:href   "https://practicalli.github.io/spacemacs/"
+             :target "_blank"}
          [:figure {:class "image"}
           [:img {:src "images/practicalli-spacemacs-book-cover.png"}]]]
         [:p {:class "has-text-centered"}
