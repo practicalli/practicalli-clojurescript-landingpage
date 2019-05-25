@@ -196,7 +196,7 @@
       [:h2 {:class "title has-text-centered"}
        "Support Practicalli"]
       [:h3 {:class "subtitle has-text-centered"}
-       "Help me create more content for everyone.  Constructive feedback and financial support is always welcome."]
+       "Help me create more content for everyone.  Motivation and financial support are always welcome."]
 
       [:div {:class "columns is-vcentered"}
 
