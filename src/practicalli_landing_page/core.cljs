@@ -27,22 +27,29 @@
 
 ;; define your app data so that it doesn't get over-written on reload
 (defonce app-state
-  (atom {:text             "Hello world!"
-         :youtube
+  (atom {:youtube
+
          {:channels
           {:practicalli
            "https://www.youtube.com/channel/UCLsiVY-kWVH1EqgEtZiREJw"
            :jr0cket
            "http://yt.vu/+jr0cket"}
+
           :playlists
           {:study-group-jr0cket
            "https://www.youtube.com/watch?v=MZcuL4lRw5E&list=PLy9I_IfUBzKJSgctCJaRYcnF6kZdiZ5ku"}}
-         :support-channels {:patreon     {:url  "https://www.patreon.com/practicalli"
-                                          :logo "images/patreon-navy.png"}
-                            :paypal-me   {:url  "https://paypal.me/practicalli"
-                                          :logo "images/paypal-me-logo.png"}
-                            :kickstarter {:url  "/"
-                                          :logo "images/kickstarter-logo.jpeg"}}}))
+
+         :support-channels
+         {:brompton-across-britain {:url  "https://brompton-across-britain.github.io/"
+                                    :logo "images/brompton-across-britain-bike.png"}
+          :github-sponsors         {:url  "https://github.com/users/jr0cket/sponsorship"
+                                    :logo "images/github-sponsors-mona.png"}
+          :patreon                 {:url  "https://www.patreon.com/practicalli"
+                                    :logo "images/patreon-navy.png"}
+          :paypal-me               {:url  "https://paypal.me/practicalli"
+                                    :logo "images/paypal-me-logo.png"}
+          :kickstarter             {:url  "/"
+                                    :logo "images/kickstarter-logo.jpeg"}}}))
 
 
 ;; Website structure

@@ -207,6 +207,14 @@
           [:img {:src "images/youtube-subscribe-button.jpg"}]]]]
 
        [:div {:class "column"}
+        [:h {:class "title is-5 has-text-centered"}
+         "1,407Km sponsored ride across Britain for 9 days"]
+        [:a {:href   (get-in support-channels [:brompton-around-britain :url])
+             :target "_blank"}
+         [:figure {:class "image"}
+          [:img {:src (get-in support-channels [:brompton-across-britain :logo])}]]]]
+
+       [:div {:class "column"}
         [:a {:href   (get-in support-channels [:paypal-me :url])
              :target "_blank"}
          [:figure {:class "image"}
@@ -217,6 +225,14 @@
              :target "_blank"}
          [:figure {:class "image"}
           [:img {:src (get-in support-channels [:patreon :logo])}]]]]
+
+       [:div {:class "column"}
+        [:h {:class "title is-4 has-text-centered"}
+         "Sponsorship waitlist"]
+        [:a {:href   (get-in support-channels [:github-sponsors :url])
+             :target "_blank"}
+         [:figure {:class "image"}
+          [:img {:src (get-in support-channels [:github-sponsors :logo])}]]]]
 
        [:div {:class "column"}
         [:h {:class "title is-4 has-text-centered"}
