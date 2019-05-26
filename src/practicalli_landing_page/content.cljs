@@ -209,7 +209,7 @@
        [:div {:class "column"}
         [:h {:class "title is-5 has-text-centered"}
          "1,407Km sponsored ride across Britain for 9 days"]
-        [:a {:href   (get-in support-channels [:brompton-around-britain :url])
+        [:a {:href   (get-in support-channels [:brompton-across-britain :url])
              :target "_blank"}
          [:figure {:class "image"}
           [:img {:src (get-in support-channels [:brompton-across-britain :logo])}]]]]
