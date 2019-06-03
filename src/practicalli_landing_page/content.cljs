@@ -88,8 +88,10 @@
    [:div {:class "box"}
     [:div {:class "columns is-vcentered"}
      [:div {:class "column"}
-      [:figure {:class "image"}
-       [:img {:src "images/practicalli-study-group-youtube-live.png"}]]]
+      [:a {:href   (get-in youtube-links [:channels :practicalli] )
+           :target "_blank"}
+       [:figure {:class "image"}
+        [:img {:src "images/practicalli-study-group-youtube-live.png"}]]]]
 
      [:div {:class "column"}
       [:div {:class "content"}
@@ -101,10 +103,11 @@
         " each Saturday 10:00 (UK, UTC+1), each covering a specific aspect of Clojure or ClojureScript."]
 
        [:p
-        [:a {:href (get-in youtube-links [:playlists :study-group-jr0cket] )}
+        [:a {:href   (get-in youtube-links [:playlists :practicalli-study-group])
+             :target "_blank"}
          "The study group playlist"]
         " contains recordings of all previous broadcasts.  A "
-        [:a {:href "https://practicalli.github.io/clojure-study-group/"
+        [:a {:href   "https://practicalli.github.io/clojure-study-group/"
              :target "_blank"}
          "study group page" ]
         " is being built in ClojureScript to help you find videos easily"]
