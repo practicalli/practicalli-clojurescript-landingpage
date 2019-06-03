@@ -36,8 +36,11 @@
            "http://yt.vu/+jr0cket"}
 
           :playlists
-          {:study-group-jr0cket
-           "https://www.youtube.com/watch?v=MZcuL4lRw5E&list=PLy9I_IfUBzKJSgctCJaRYcnF6kZdiZ5ku"}}
+          {:jr0cket-study-group
+           "https://www.youtube.com/watch?v=MZcuL4lRw5E&list=PLy9I_IfUBzKJSgctCJaRYcnF6kZdiZ5ku"
+           :practicalli-study-group
+           "https://www.youtube.com/playlist?list=PLpr9V-R8ZxiDjyU7cQYWOEFBDR1t7t0wv"}}
+
 
          :support-channels
          {:brompton-across-britain {:url  "https://brompton-across-britain.github.io/"
@@ -121,5 +124,5 @@
              :jr0cket
              "http://yt.vu/+jr0cket"}
             :playlists
-            {:study-group-jr0cket
+            {:jr0cket-study-group
              "https://www.youtube.com/watch?v=MZcuL4lRw5E&list=PLy9I_IfUBzKJSgctCJaRYcnF6kZdiZ5ku"}}})
