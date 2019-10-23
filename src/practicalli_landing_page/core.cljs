@@ -29,7 +29,7 @@
 (defonce app-state
   (atom {:youtube
 
-         {:channels
+         {:channel
           {:practicalli
            "https://www.youtube.com/channel/UCLsiVY-kWVH1EqgEtZiREJw"
            :jr0cket
