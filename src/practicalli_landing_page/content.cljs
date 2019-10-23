@@ -77,7 +77,7 @@
       [:h3 {:class "subtitle"}
        "Practical approaches to learning Functional Programming with Clojure"]
       [:div {:div "content"}
-       "YouTube broadcasts, screencasts and online guides to support you in your journey into Clojure and development tools"]]
+       "YouTube broadcasts, screencasts and guides to support your journey into Clojure"]]
      ]]])
 
 
@@ -100,7 +100,7 @@
         [:a {:href   (get-in youtube-links [:channels :practicalli] )
              :target "_blank"}
          "Live broadcasts"]
-        " each Saturday 10:00 (UK, UTC+1), each covering a specific aspect of Clojure or ClojureScript."]
+        " each Saturday 10:00 (UTC+1), each covering a aspects of Clojure or ClojureScript."]
 
        [:p
         [:a {:href   (get-in youtube-links [:playlists :practicalli-study-group])
@@ -223,27 +223,27 @@
          [:figure {:class "image"}
           [:img {:src (get-in support-channels [:paypal-me :logo])}]]]]
 
-       [:div {:class "column"}
-        [:a {:href   (get-in support-channels [:patreon :url])
-             :target "_blank"}
-         [:figure {:class "image"}
-          [:img {:src (get-in support-channels [:patreon :logo])}]]]]
+       #_[:div {:class "column"}
+          [:a {:href   (get-in support-channels [:patreon :url])
+               :target "_blank"}
+           [:figure {:class "image"}
+            [:img {:src (get-in support-channels [:patreon :logo])}]]]]
 
        [:div {:class "column"}
         [:h {:class "title is-4 has-text-centered"}
-         "Sponsorship waitlist"]
+         "Waiting approval"]
         [:a {:href   (get-in support-channels [:github-sponsors :url])
              :target "_blank"}
          [:figure {:class "image"}
           [:img {:src (get-in support-channels [:github-sponsors :logo])}]]]]
 
-       [:div {:class "column"}
-        [:h {:class "title is-4 has-text-centered"}
-         "Specific campaigns coming soon!"]
-        [:a {:href   (get-in support-channels [:kickstarter :url])
-             :target "_blank"}
-         [:figure {:class "image"}
-          [:img {:src (get-in support-channels [:kickstarter :logo])}]]]]
+       #_[:div {:class "column"}
+          [:h {:class "title is-4 has-text-centered"}
+           "Specific campaigns coming soon!"]
+          [:a {:href   (get-in support-channels [:kickstarter :url])
+               :target "_blank"}
+           [:figure {:class "image"}
+            [:img {:src (get-in support-channels [:kickstarter :logo])}]]]]
 
        ]]]]])
 
@@ -264,7 +264,10 @@
 
        [:div {:class "column is-3 is-offset-2"}
         [:h3 {:class "subtitle has-text-centered"}
-         "Clojurians Slack Community: #practicalli for general discussions and #study-group for specific help"]
+         [:a {:href   "https://clojurians.slack.com/messages/practicalli"
+              :target "_blank"}
+          "#practicalli channel"]
+         [:p "Clojurians Slack Community for general discussions and help"]]
 
         [:a {:href   "http://clojurians.net"
              :target "_blank"}
