@@ -30,7 +30,7 @@
      [:div {:class "navbar-start"}
 
       [:a {:class "navbar-item"
-           :href  "#overview"} "Overview"]
+           :href  "blog/"} "Blog"]
 
       [:a {:class "navbar-item"
            :href  "#study-group"} "Study Group"]
