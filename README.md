@@ -46,7 +46,7 @@ To clean all compiled files:
 To create a production build run:
 
     lein clean
-    lein fig:min
+    lein fig:live
 
 ### Deploying to Test
 
