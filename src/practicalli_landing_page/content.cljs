@@ -74,7 +74,7 @@
       [:h3 {:class "subtitle"}
        "Practical approaches to learning Functional Programming with Clojure"]
       [:div {:div "content"}
-       "YouTube broadcasts, screencasts and guides to support your journey into Clojure"]]
+       "YouTube broadcasts, screencasts, books and guides to support your journey into Clojure"]]
      ]]])
 
 
@@ -211,6 +211,7 @@
           "My 1000 mile UK charity ride" ]]]
 
 
+       ;; Paypal.me
 
        [:div {:class "column"}
 
@@ -222,10 +223,10 @@
             [:img {:src (get-in support-channels [:paypal-me :logo])}]]]
           ]
          [:div {:class "card-content"}
-          "Donation in any currency" ]]
+          "Donation in any currency" ]]]
 
-        ]
 
+       ;; GitHub sponsors
 
        [:div {:class "column"}
 
