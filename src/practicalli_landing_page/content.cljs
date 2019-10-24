@@ -92,7 +92,7 @@
        [:h2 {:class "title has-text-centered"}
         "Videos and Screencasts"]
 
-       [:a {:href   (get-in youtube-links [:channels :practicalli] )
+       [:a {:href   (get-in youtube-links [:channel :practicalli] )
             :target "_blank"}
         [:figure {:class "image"}
          [:img {:src "images/practicalli-banner-icons-only.png"}]]]]]
@@ -101,7 +101,7 @@
       [:div {:class "content"}
 
        [:p
-        [:a {:href   (get-in youtube-links [:channels :practicalli] )
+        [:a {:href   (get-in youtube-links [:channel :practicalli] )
              :target "_blank"}
          "Live broadcasts"]
         " each Saturday 10:00 (UTC+1), each covering a aspects of Clojure or ClojureScript."]
