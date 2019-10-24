@@ -203,39 +203,68 @@
 
       [:div {:class "columns is-vcentered"}
 
-       [:div {:class "column"}
-        [:a {:href   "http://yt.vu/+practicalli"
-             :target "_blank"}
-         [:figure {:class "image"}
-          [:img {:src "images/youtube-subscribe-button.jpg"}]]]]
+       ;; YouTube Subscription
 
        [:div {:class "column"}
-        [:h {:class "title is-5 has-text-centered"}
-         "1,407Km sponsored ride across Britain for 9 days"]
-        [:a {:href   (get-in support-channels [:brompton-across-britain :url])
-             :target "_blank"}
-         [:figure {:class "image"}
-          [:img {:src (get-in support-channels [:brompton-across-britain :logo])}]]]]
+        [:div {:class "card"}
+         [:div {:class "card-image"}
+          [:a {:href   "http://yt.vu/+practicalli"
+               :target "_blank"}
+           [:figure {:class "image is-square"}
+            [:img {:src "images/youtube-subscribe-button.jpg"}]]]]
+         [:div {:class "card-content"}
+          "Free Subscription"]]]
+
+
+       ;; Charity cycle ride
 
        [:div {:class "column"}
-        [:a {:href   (get-in support-channels [:paypal-me :url])
-             :target "_blank"}
-         [:figure {:class "image"}
-          [:img {:src (get-in support-channels [:paypal-me :logo])}]]]]
+
+        [:div {:class "card"}
+         [:div {:class "card-image"}
+
+          [:a {:href   (get-in support-channels [:brompton-across-britain :url])
+               :target "_blank"}
+           [:figure {:class "image is-square"}
+            [:img {:src (get-in support-channels [:brompton-across-britain :logo])}]]]]
+         [:div {:class "card-content"}
+          "My 1000 mile UK charity ride" ]]]
+
+
+
+       [:div {:class "column"}
+
+        [:div {:class "card"}
+         [:div {:class "card-image"}
+          [:a {:href   (get-in support-channels [:paypal-me :url])
+               :target "_blank"}
+           [:figure {:class "image is-square"}
+            [:img {:src (get-in support-channels [:paypal-me :logo])}]]]
+          ]
+         [:div {:class "card-content"}
+          "Direct donation in any currency" ]]
+
+        ]
+
+
+       [:div {:class "column"}
+
+        [:div {:class "card"}
+         [:div {:class "card-image"}
+          [:a {:href   (get-in support-channels [:github-sponsors :url])
+               :target "_blank"}
+           [:figure {:class "image is-square"}
+            [:img {:src (get-in support-channels [:github-sponsors :logo])}]]]]
+         [:div {:class "card-content"}
+          "Monthly Sponsorship (US Dollars)" ]]]
+
+       ;; Sponsorship channels not used yet
 
        #_[:div {:class "column"}
           [:a {:href   (get-in support-channels [:patreon :url])
                :target "_blank"}
            [:figure {:class "image"}
             [:img {:src (get-in support-channels [:patreon :logo])}]]]]
-
-       [:div {:class "column"}
-        [:h {:class "title is-4 has-text-centered"}
-         "Waiting approval"]
-        [:a {:href   (get-in support-channels [:github-sponsors :url])
-             :target "_blank"}
-         [:figure {:class "image"}
-          [:img {:src (get-in support-channels [:github-sponsors :logo])}]]]]
 
        #_[:div {:class "column"}
           [:h {:class "title is-4 has-text-centered"}
