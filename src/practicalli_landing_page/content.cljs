@@ -265,41 +265,19 @@
    [:div {:class "box"}
     [:div {:class "columns"}
 
-     [:div {:class "column"}
+     [:div {:class "column is-8 is-offset-2"}
       [:h2 {:class "title has-text-centered"}
        "Contact and Feedback"]
 
-      [:div {:class "columns is-vcentered"}
+      [:a {:href   "https://clojurians.slack.com/messages/practicalli"
+           :target "_blank"}
+       [:figure {:class "image"}
+        [:img {:src "images/practicalli-slack-channel.png"}]]]
 
-       [:div {:class "column is-3 is-offset-2"}
-        [:h3 {:class "subtitle has-text-centered"}
-         [:a {:href   "https://clojurians.slack.com/messages/practicalli"
-              :target "_blank"}
-          "#practicalli channel"]
-         [:p "Clojurians Slack Community for general discussions and help"]]
-
-        [:a {:href   "http://clojurians.net"
-             :target "_blank"}
-         [:figure {:class "image"}
-          [:img {:src "images/clojurians-slack-invite.png"}]]]]
-
-       [:div {:class "column is-3"}
-        [:a {:href   "https://github.com/practicalli"
-             :target "_blank"}
-         [:h3 {:class "subtitle has-text-centered"}
-          "Github Practicalli Organisation"]
-         [:figure {:class "image"}
-          [:img {:src "images/Octocat.png"}]]]]
-
-       [:div {:class "column is-3"}
-        [:a {:href   "https://twitter.com/practical_li"
-             :target "_blank"}
-         [:figure {:class "image"}
-          [:img {:src "images/twitter-practicalli-username.png"}]]]]
-
-       ]]]]])
-
-
+      [:a {:href   "http://clojurians.net"
+           :target "_blank"}
+       [:p {:class "has-text-centered"}
+        "Sign up for a free account to the Clojurians Slack community"]]]]]])
 
 
 (defn resources
