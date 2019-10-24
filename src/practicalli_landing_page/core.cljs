@@ -45,7 +45,7 @@
          :support-channels
          {:brompton-across-britain {:url  "https://brompton-across-britain.github.io/"
                                     :logo "images/brompton-across-britain-bike.png"}
-          :github-sponsors         {:url  "https://github.com/users/jr0cket/sponsorship"
+          :github-sponsors         {:url  "https://github.com/sponsors/jr0cket"
                                     :logo "images/github-sponsors-mona.png"}
           :patreon                 {:url  "https://www.patreon.com/practicalli"
                                     :logo "images/patreon-navy.png"}
