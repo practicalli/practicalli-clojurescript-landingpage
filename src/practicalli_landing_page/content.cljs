@@ -242,7 +242,7 @@
             [:img {:src (get-in support-channels [:paypal-me :logo])}]]]
           ]
          [:div {:class "card-content"}
-          "Direct donation in any currency" ]]
+          "Donation in any currency" ]]
 
         ]
 
@@ -256,7 +256,7 @@
            [:figure {:class "image is-square"}
             [:img {:src (get-in support-channels [:github-sponsors :logo])}]]]]
          [:div {:class "card-content"}
-          "Monthly Sponsorship (US Dollars)" ]]]
+          "GitHub Sponsor (US Dollars)" ]]]
 
        ;; Sponsorship channels not used yet
 
