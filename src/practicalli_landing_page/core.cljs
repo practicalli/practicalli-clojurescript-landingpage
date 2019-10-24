@@ -60,20 +60,18 @@
 
 
 (defn main-page
+  "The layout of components on the main page."
   []
   [:div
    [content/navigation-fixed]
 
    [content/title-banner]
 
-   [content/level-separator "study-group"]
-   [content/study-group (get @app-state :youtube)]
+   [content/level-separator "videos-broadcasts"]
+   [content/videos-broadcasts (get @app-state :youtube)]
 
    [content/level-separator "books"]
    [content/books]
-
-   [content/level-separator "videos"]
-   [content/videos]
 
    [content/level-separator "contact"]
    [content/contact]

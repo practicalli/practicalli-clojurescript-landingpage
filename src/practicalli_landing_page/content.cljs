@@ -33,13 +33,10 @@
            :href  "/blog/"} "Blog"]
 
       [:a {:class "navbar-item"
-           :href  "#study-group"} "Study Group"]
+           :href  "#videos-broadcasts"} "Videos"]
 
       [:a {:class "navbar-item"
            :href  "#books"} "Books"]
-
-      [:a {:class "navbar-item"
-           :href  "#videos"} "Videos"]
 
       [:a {:class "navbar-item"
            :href  "#contact"} "Contact"]
@@ -82,16 +79,23 @@
 
 
 
-(defn study-group
+(defn videos-broadcasts
   [youtube-links]
   [:div {:class "container"}
    [:div {:class "box"}
     [:div {:class "columns is-vcentered"}
+
+
      [:div {:class "column"}
-      [:a {:href   (get-in youtube-links [:channels :practicalli] )
+      [:a {:href   "http://yt.vu/+practicalli"
            :target "_blank"}
-       [:figure {:class "image"}
-        [:img {:src "images/practicalli-study-group-youtube-live.png"}]]]]
+       [:h2 {:class "title has-text-centered"}
+        "Videos and Screencasts"]
+
+       [:a {:href   (get-in youtube-links [:channels :practicalli] )
+            :target "_blank"}
+        [:figure {:class "image"}
+         [:img {:src "images/practicalli-banner-icons-only.png"}]]]]]
 
      [:div {:class "column"}
       [:div {:class "content"}
@@ -161,31 +165,7 @@
        ]]]]]
   )
 
-(defn videos
-  "Ways in which you can contact Practicalli"
-  []
-  [:div {:class "container"}
-   [:div {:class "box"}
-    [:div {:class "columns"}
 
-     [:div {:class "column"}
-
-      [:a {:href   "http://yt.vu/+practicalli"
-           :target "_blank"}
-       [:h2 {:class "title has-text-centered"}
-        "Videos and Screencasts"]
-       [:h3 {:class "subtitle has-text-centered"}
-        "Currently re-organising all the Practicalli video content to make it easier to find on YouTube"]]
-
-      [:div {:class "columns"}
-       [:div {:class "column is-half is-offset-3"}
-
-        [:a {:href   "http://yt.vu/+practicalli"
-             :target "_blank"}
-         [:figure {:class "image"}
-          [:img {:src "images/practicalli-banner-icons-only.png"}]]]]
-
-       ]]]]])
 
 
 (defn support-practicalli
