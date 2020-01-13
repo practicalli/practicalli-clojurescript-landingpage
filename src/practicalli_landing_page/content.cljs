@@ -90,12 +90,12 @@
       [:a {:href   "http://yt.vu/+practicalli"
            :target "_blank"}
        [:h2 {:class "title has-text-centered"}
-        "Videos and Screencasts"]
+        "Videos and Screencasts"]]
 
-       [:a {:href   (get-in youtube-links [:channel :practicalli] )
-            :target "_blank"}
-        [:figure {:class "image"}
-         [:img {:src "images/practicalli-banner-icons-only.png"}]]]]]
+      [:a {:href   (get-in youtube-links [:channel :practicalli] )
+           :target "_blank"}
+       [:figure {:class "image"}
+        [:img {:src "images/practicalli-banner-icons-full-horizontal.png"}]]]]
 
      [:div {:class "column"}
       [:div {:class "content"}
@@ -104,17 +104,13 @@
         [:a {:href   (get-in youtube-links [:channel :practicalli] )
              :target "_blank"}
          "Live broadcasts"]
-        " each Saturday 10:00 (UTC+1), each covering a aspects of Clojure or ClojureScript."]
+        " every weekend covering aspects of Clojure and ClojureScript programming."]
 
        [:p
         [:a {:href   (get-in youtube-links [:playlists :practicalli-study-group])
              :target "_blank"}
          "The study group playlist"]
-        " contains recordings of all previous broadcasts.  A "
-        [:a {:href   "https://practicalli.github.io/clojure-study-group/"
-             :target "_blank"}
-         "study group page" ]
-        " is being built in ClojureScript to help you find videos easily"]
+        " contains recordings of all previous broadcasts."]
 
        ]]]]])
 
