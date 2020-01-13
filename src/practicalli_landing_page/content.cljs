@@ -194,17 +194,17 @@
 
        ;; Charity cycle ride
 
-       [:div {:class "column"}
+       ;; [:div {:class "column"}
 
-        [:div {:class "card"}
-         [:div {:class "card-image"}
+       ;;  [:div {:class "card"}
+       ;;   [:div {:class "card-image"}
 
-          [:a {:href   (get-in support-channels [:brompton-across-britain :url])
-               :target "_blank"}
-           [:figure {:class "image is-square"}
-            [:img {:src (get-in support-channels [:brompton-across-britain :logo])}]]]]
-         [:div {:class "card-content"}
-          "My 1000 mile UK charity ride" ]]]
+       ;;    [:a {:href   (get-in support-channels [:brompton-across-britain :url])
+       ;;         :target "_blank"}
+       ;;     [:figure {:class "image is-square"}
+       ;;      [:img {:src (get-in support-channels [:brompton-across-britain :logo])}]]]]
+       ;;   [:div {:class "card-content"}
+       ;;    "My 1000 mile UK charity ride" ]]]
 
 
        ;; Paypal.me
