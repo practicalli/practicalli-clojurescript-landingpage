@@ -79,6 +79,50 @@
 
 
 
+(defn sponsorship
+  "Generate website section for a main sponsor
+  Arguments:
+  - hash-map of sponsor details
+  Returns:
+  - vector of hiccup to be rendered as a reagent component"
+  [sponsor]
+  [:div {:class "container"}
+   [:div {:class "box"}
+
+    [:div {:class "content"}
+     [:a {:href   (:url sponsor)
+          :target "_blank"}
+      [:h2 {:class "title has-text-centered"}
+       "Sponsored by Clojurists Together - May-June 2020"]]]
+
+    [:div {:class "columns is-vcentered"}
+     [:div {:class "column"}
+      [:a {:href   (:url sponsor)
+           :target "_blank"}
+       [:figure {:class "image"}
+        [:img {:src (:logo sponsor)}]]]]
+
+     [:div {:class "column"}
+      [:div {:class "content"}
+       [:p
+        "Follow the project development activities"]
+       [:ul
+        [:li [:a {:href (get-in sponsor [:reports :update1])}
+              "Project update: May 01-15"]]
+        #_[:li [:a {:href (get-in sponsor [:reports :update2])}
+                "Project update: May 16-30"]]
+        #_[:li [:a {:href (get-in sponsor [:reports :update3])}
+                "Project update: June 01-15"]]
+        #_[:li [:a {:href (get-in sponsor [:reports :update4])}
+                "Project update: June 16-30"]]
+        #_[:li [:a {:href (get-in sponsor [:reports :update5])}
+                "Project update: July 01-15"]]
+        #_[:li [:a {:href (get-in sponsor [:reports :update6])}
+                "Project update: July 16-30"]]]
+       ]]]]])
+
+
+
 (defn videos-broadcasts
   [youtube-links]
   [:div {:class "container"}
