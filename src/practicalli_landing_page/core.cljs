@@ -52,7 +52,15 @@
           :paypal-me               {:url  "https://paypal.me/practicalli"
                                     :logo "images/paypal-me-logo.png"}
           :kickstarter             {:url  "/"
-                                    :logo "images/kickstarter-logo.jpeg"}}}))
+                                    :logo "images/kickstarter-logo.jpeg"}
+          :clojurists-together     {:url     "https://www.clojuriststogether.org/"
+                                    :logo    "images/clojurists-together-banner.png"
+                                    :reports {:update1 "https://github.com/practicalli/clojurists-together-journal/blob/master/2020-May-01-15.md"
+                                              :update2 ""
+                                              :update3 ""
+                                              :update4 ""
+                                              :update5 ""
+                                              :update6 ""}}}}))
 
 
 ;; Website structure
