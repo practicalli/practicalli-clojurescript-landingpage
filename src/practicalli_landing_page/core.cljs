@@ -75,6 +75,8 @@
 
    [content/title-banner]
 
+   [content/sponsorship (get-in @app-state [:support-channels :clojurists-together])]
+
    [content/level-separator "videos-broadcasts"]
    [content/videos-broadcasts (get @app-state :youtube)]
 
