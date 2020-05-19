@@ -422,3 +422,15 @@
          :id    identifier}
    [:h5 {:class "is-size-5 is-invisible"}
     identifier]])
+
+
+
+;; Design Journal
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+;; Testing sponsorship function
+#_
+(sponsorship {:url     ""
+              :logo    ""
+              :reports {:update1 ""}})
