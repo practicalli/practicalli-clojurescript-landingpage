@@ -18,11 +18,11 @@ To get an interactive development environment run:
 
 Open one of the ClojureScript source code files, e.g. `src/practicalli_landing_page/core.cljs`
 
-`, "` or `, s I` will run the `clojurescript-jack-in` function.
+`, '` and select the `cider-jack-in-cljs` option (or use `, s j s`).
 
-When prompted, select `figwheel-main`
+Select `figwheel-main` when prompted for build tool
 
-Enter `dev` as the profile when prompted
+Select `dev` when prompted for the profile
 
 
 ### Run via the command line
