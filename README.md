@@ -69,8 +69,9 @@ Clone the `practicalli.github.io` repository
 
 Copy all files and directories from the `/docs` directory to the root of that repository.
 
-`cp -r ../practicalli-landing-page/docs/* .`
+`cp -ruv ../practicalli-landing-page/docs/* .`
 
+> Note: option r for recursive, u for update so only newer files are copied and v for verbose to show what files are copied.
 
 ## License
 
