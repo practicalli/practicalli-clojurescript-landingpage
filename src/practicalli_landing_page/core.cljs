@@ -31,7 +31,7 @@
 
          {:channel
           {:practicalli
-           "http://yt.vu/+practicalli"
+           "http://youtube.com/c/+practicalli"
            :jr0cket
            "http://yt.vu/+jr0cket"}
 
