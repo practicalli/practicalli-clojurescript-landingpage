@@ -164,47 +164,66 @@
 (defn books
   []
   [:div {:class "container"}
+
+   ;; Books complete enough to use
    [:div {:class "box"}
 
     [:div {:class "columns"}
      [:div {:class "column"}
       [:h2 {:class "title has-text-centered"}
-       "Free Books online - work in progress"]
+       "Freely available books online"]
       [:div {:class "columns"}
-       [:div {:class "column"}
-        [:a {:href   "https://practicalli.github.io/clojure/"
-             :target "_blank"}
-         [:figure {:class "image"}
-          [:img {:src "images/practicalli-clojure-book-cover.png"}]]]
-        [:p {:class "has-text-centered"}
-         "Learn the Clojure language"]]
-
-       [:div {:class "column"}
-        [:a {:href   "https://practicalli.github.io/clojure-webapps/"
-             :target "_blank"}
-         [:figure {:class "image"}
-          [:img {:src "images/practicalli-clojure-webapps-book-cover.png"}]]]
-        [:p {:class "has-text-centered"}
-         "Build Clojure webapps and API's"]]
-
-       [:div {:class "column"}
-        [:a {:href   "https://practicalli.github.io/clojurescript/"
-             :target "_blank"}
-         [:figure {:class "image"}
-          [:img {:src "images/practicalli-clojurescript-book-cover.png"}]]]
-        [:p {:class "has-text-centered"}
-         "Learn ClojureScript for websites, dynamic UI's and mobile apps"]]
 
        [:div {:class "column"}
         [:a {:href   "https://practicalli.github.io/spacemacs/"
              :target "_blank"}
          [:figure {:class "image"}
-          [:img {:src "images/practicalli-spacemacs-book-cover.png"}]]]
-        [:p {:class "has-text-centered"}
-         "Clojure development with Spacemacs"]]
-       ]]]]]
-  )
+          [:img {:src "images/practicalli-spacemacs-book-banner.png"}]]]
+        [:p {:class "content has-text-centered"}
+         "Powerful editing with Emacs and Vim multi-modal editing, with a mnemonic menu that simplifies the learning curve.  Install a full Clojure development experience with two Git commands."]
+        ]
 
+       [:div {:class "column"}
+        [:a {:href   "https://practicalli.github.io/clojure-webapps/"
+             :target "_blank"}
+         [:figure {:class "image"}
+          [:img {:src "images/practicalli-clojure-webapps-book-banner.png"}]]]
+        [:p {:class "has-text-centered"}
+         "Build server-side apps, micro-services and API's"]
+        ]
+       ]]]]
+
+   ;; Books under heavy development
+   [:div {:class "box"}
+    [:div {:class "columns"}
+     [:div {:class "column"}
+      [:h2 {:class "title has-text-centered"}
+       "Books under major re-development"]
+      [:div {:class "columns"}
+
+       [:div {:class "column"}
+        [:a {:href   "https://practicalli.github.io/clojure/"
+             :target "_blank"}
+         [:figure {:class "image"}
+          [:img {:src "images/practicalli-clojure-book-banner.png"}]]]
+        [:p {:class "has-text-centered"}
+         "Learn the Clojure language through REPL driven development, using Clojure CLI tools and deps.edn"]
+        ]
+
+
+       [:div {:class "column"}
+        [:a {:href   "https://practicalli.github.io/clojurescript/"
+             :target "_blank"}
+         [:figure {:class "image"}
+          [:img {:src "images/practicalli-clojurescript-book-banner.png"}]]]
+        [:p {:class "has-text-centered"}
+         "Learn ClojureScript to build single page apps (SPA's), dynamic UI's and mobile apps. Using figwheel-main (and eventually shadow-cljs) along with reagent (and eventually re-frame)"]
+        ]
+
+       ]]
+     ]]
+   ]
+  )
 
 
 
