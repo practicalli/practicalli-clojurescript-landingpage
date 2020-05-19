@@ -123,12 +123,15 @@
   )
 
 
+;; REPL Driven Development
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
 #_(reset! app-state
           {:text "Hello world!"
            :youtube
            {:channels
             {:practicalli
-             "https://www.youtube.com/channel/UCLsiVY-kWVH1EqgEtZiREJw"
+             "https://www.youtube.com/c/+practicalli"
              :jr0cket
              "http://yt.vu/+jr0cket"}
             :playlists
