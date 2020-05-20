@@ -60,7 +60,7 @@ Also copy the following file to `/docs/cljs-out/` directory
 
 - `resources/public/cljs-out/dev-main.js`
 
-Committing these files will update the test environment for this project, allowing deployed changes to be viewed before pushing to live.
+Committing these files in the `/docs` directory will update [the test environment for this project](https://practicalli.github.io/practicalli-landing-page/), allowing deployed changes to be viewed before pushing to live.
 
 
 ### Deploy to Live
