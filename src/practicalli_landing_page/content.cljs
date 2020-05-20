@@ -105,7 +105,7 @@
      [:div {:class "column"}
       [:div {:class "content"}
        [:p
-        "Follow the project development activities"]
+        "Follow the project development activities during the sponsorship"]
        [:ul
         [:li [:a {:href (get-in sponsor [:reports :update1])}
               "Project update: May 01-15"]]
