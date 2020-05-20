@@ -185,6 +185,10 @@
          [:a {:href   "https://github.com/practicalli/spacemacs-content/issues"
               :target "_blank"}
           [:img {:src "https://img.shields.io/github/issues/practicalli/spacemacs-content?color=purple&label=content%20ideas"
+                 :alt "Content ideas as GitHub issues"}]]
+         [:a {:href   "https://github.com/practicalli/spacemacs-content/pulls"
+              :target "_blank"}
+          [:img {:src "https://img.shields.io/github/issues-pr/practicalli/spacemacs-content?color=yellow&label=pull%20requests"
                  :alt "Content ideas as GitHub issues"}]]]]
 
        [:div {:class "column"}
@@ -198,6 +202,10 @@
          [:a {:href   "https://github.com/practicalli/clojure-webapps-content/issues"
               :target "_blank"}
           [:img {:src "https://img.shields.io/github/issues/practicalli/clojure-webapps-content?color=green&label=content%20ideas"
+                 :alt "Content ideas as GitHub issues"}]]
+         [:a {:href   "https://github.com/practicalli/clojure-webapps-content/pulls"
+              :target "_blank"}
+          [:img {:src "https://img.shields.io/github/issues-pr/practicalli/clojure-webapps-content?color=yellow&label=pull%20requests"
                  :alt "Content ideas as GitHub issues"}]]]]
        ]]]]
 
@@ -220,8 +228,11 @@
          [:a {:href   "https://github.com/practicalli/clojure-practicalli-content/issues"
               :target "_blank"}
           [:img {:src "https://img.shields.io/github/issues/practicalli/clojure-practicalli-content?color=green&label=content%20ideas"
+                 :alt "Content ideas as GitHub issues"}]]
+         [:a {:href   "https://github.com/practicalli/clojure-practicalli-content/pulls"
+              :target "_blank"}
+          [:img {:src "https://img.shields.io/github/issues-pr/practicalli/clojure-practicalli-content?color=yellow&label=pull%20requests"
                  :alt "Content ideas as GitHub issues"}]]]]
-
 
        [:div {:class "column"}
         [:a {:href   "https://practicalli.github.io/clojurescript/"
@@ -234,12 +245,12 @@
          [:a {:href   "https://github.com/practicalli/clojurescript-content/issues"
               :target "_blank"}
           [:img {:src "https://img.shields.io/github/issues/practicalli/clojurescript-content?color=blue&label=content%20ideas"
+                 :alt "Content ideas as GitHub issues"}]]
+         [:a {:href   "https://github.com/practicalli/clojurescript-content/pulls"
+              :target "_blank"}
+          [:img {:src "https://img.shields.io/github/issues-pr/practicalli/clojurescript-content?color=yellow&label=pull%20requests"
                  :alt "Content ideas as GitHub issues"}]]]]
-
-       ]]
-     ]]
-   ]
-  )
+       ]]]]])
 
 
 
