@@ -123,33 +123,42 @@
 
 
 
-(defn youtube-playlists-unordered-list
+(defn youtube-playlists-list
   [youtube-links]
   [:div {:class "content"}
-   [:h2 {:class "title"}
+   [:h2 {:class "title has-text-centered"}
     "Practicalli Video Playlists"]
-   [:ul
+   [:ul {:style {:list-style-type "none"}}
     [:li [:a {:href   (get-in youtube-links [:playlists :practicalli-clojure-study-group])
               :target "_blank"}
+          [:span {:class "icon"}
+           [:i {:class "fab fa-youtube"}]]
           "Clojure study group"]]
-    [:li [:a {:href   (get-in youtube-links [:playlists :practicalli-4clojure])
+    [:li [:a {:href   (get-in youtube-links [:playlists :practicalli-4clojure-guides])
               :target "_blank"}
+          [:span {:class "icon"}
+           [:i {:class "fab fa-youtube"}]]
           "4Clojure Guides"]]
     [:li [:a {:href   (get-in youtube-links [:playlists :practicalli-clojure-webapps])
               :target "_blank"}
+          [:span {:class "icon"}
+           [:i {:class "fab fa-youtube"}]]
           "Clojure Server-side WebApps & APIs"]]
     [:li [:a {:href   (get-in youtube-links [:playlists :practicalli-clojure-cli-tools])
               :target "_blank"}
+          [:span {:class "icon"}
+           [:i {:class "fab fa-youtube"}]]
           "Clojure CLI tools and deps.edn"]]
     [:li [:a {:href   (get-in youtube-links [:playlists :practicalli-clojure-data-science])
               :target "_blank"}
+          [:span {:class "icon"}
+           [:i {:class "fab fa-youtube"}]]
           "Clojure Data Science and Visualization"]]
     [:li [:a {:href   (get-in youtube-links [:playlists :practicalli-spacemacs])
               :target "_blank"}
+          [:span {:class "icon"}
+           [:i {:class "fab fa-youtube"}]]
           "Spacemacs - Emacs and Vim tools for (Clojure) development"]]]
-   ]
-  )
-
 
 
 
@@ -246,7 +255,7 @@
         [:img {:src "images/practicalli-banner-icons-full-horizontal.png"}]]]]
 
      [:div {:class "column"}
-      (youtube-playlists-panel youtube-links)
+      (youtube-playlists-list youtube-links)
       ]]]])
 
 
