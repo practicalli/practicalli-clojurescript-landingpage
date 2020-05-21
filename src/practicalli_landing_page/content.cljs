@@ -144,18 +144,27 @@
      [:div {:class "column"}
       [:div {:class "content"}
 
-       [:p
-        [:a {:href   (get-in youtube-links [:channel :practicalli] )
-             :target "_blank"}
-         "Live broadcasts"]
-        " every weekend covering aspects of Clojure and ClojureScript programming."]
-
-       [:p
-        [:a {:href   (get-in youtube-links [:playlists :practicalli-study-group])
-             :target "_blank"}
-         "The study group playlist"]
-        " contains recordings of all previous broadcasts."]
-
+       [:h2 {:class "title"}
+        "Practicalli Video Playlists"]
+       [:ul
+        [:li [:a {:href   (get-in youtube-links [:playlists :practicalli-clojure-study-group])
+                  :target "_blank"}
+              "Clojure study group"]]
+        [:li [:a {:href   (get-in youtube-links [:playlists :practicalli-4clojure])
+                  :target "_blank"}
+              "4Clojure Guides"]]
+        [:li [:a {:href   (get-in youtube-links [:playlists :practicalli-clojure-webapps])
+                  :target "_blank"}
+              "Clojure Server-side WebApps & APIs"]]
+        [:li [:a {:href   (get-in youtube-links [:playlists :practicalli-clojure-cli-tools])
+                  :target "_blank"}
+              "Clojure CLI tools and deps.edn"]]
+        [:li [:a {:href   (get-in youtube-links [:playlists :practicalli-clojure-data-science])
+                  :target "_blank"}
+              "Clojure Data Science and Visualization"]]
+        [:li [:a {:href   (get-in youtube-links [:playlists :practicalli-clojure-data-science])
+                  :target "_blank"}
+              "Spacemacs - Emacs and Vim tools for (Clojure) development"]]]
        ]]]]])
 
 
