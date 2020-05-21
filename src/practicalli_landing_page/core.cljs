@@ -38,8 +38,20 @@
           :playlists
           {:jr0cket-study-group
            "https://www.youtube.com/watch?v=MZcuL4lRw5E&list=PLy9I_IfUBzKJSgctCJaRYcnF6kZdiZ5ku"
-           :practicalli-study-group
-           "https://www.youtube.com/playlist?list=PLpr9V-R8ZxiDjyU7cQYWOEFBDR1t7t0wv"}}
+           :practicalli-clojure-study-group
+           "https://www.youtube.com/playlist?list=PLpr9V-R8ZxiDjyU7cQYWOEFBDR1t7t0wv"
+           :practicalli-clojure-data-science
+           "https://www.youtube.com/playlist?list=PLpr9V-R8ZxiDUXIR2z8Y8wvhpoPyl0t_D"
+           :practicalli-4clojure-guides
+           "https://www.youtube.com/playlist?list=PLpr9V-R8ZxiDB_KGrbliCsCUrmcBvdW16"
+           :practicalli-clojure-webapps
+           "https://www.youtube.com/playlist?list=PLpr9V-R8ZxiCe9p9tFk24ChNSpGfanUbT"
+           :practicalli-spacemacs
+           "https://www.youtube.com/playlist?list=PLpr9V-R8ZxiCHMl2_dn1Fovcd34Oz45su"
+           :practicalli-clojure-cli-tools
+           "https://www.youtube.com/playlist?list=PLpr9V-R8ZxiB3u90ga_SdxYsF2k2JTag1"
+           }}
+
 
 
          :support-channels
