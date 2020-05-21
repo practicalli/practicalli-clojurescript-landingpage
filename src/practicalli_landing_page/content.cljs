@@ -129,15 +129,13 @@
    [:div {:class "box"}
     [:div {:class "columns is-vcentered"}
 
-
      [:div {:class "column"}
-      [:a {:href   "http://yt.vu/+practicalli"
+      [:a {:href   (get-in youtube-links [:channel :practicalli])
            :target "_blank"}
-       [:h2 {:class "title has-text-centered"}
-        "Videos and Screencasts"]]
-
-      [:a {:href   (get-in youtube-links [:channel :practicalli] )
-           :target "_blank"}
+       [:h2 {:class "title is-2 has-text-centered"}
+        "Live Broadcasts"]
+       [:h6 {:class "title is-6 has-text-centered"}
+        "A new broadcast every weekend covering Clojure and ClojureScript development"]
        [:figure {:class "image"}
         [:img {:src "images/practicalli-banner-icons-full-horizontal.png"}]]]]
 
