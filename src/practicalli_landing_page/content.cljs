@@ -140,31 +140,37 @@
           [:span {:class "icon"}
            [:i {:class "fab fa-youtube"}]]
           "Clojure study group"]]
-    [:li [:a {:href   (get-in youtube-links [:playlists :practicalli-4clojure-guides])
-              :target "_blank"}
-          [:span {:class "icon"}
-           [:i {:class "fab fa-youtube"}]]
-          "4Clojure Guides"]]
-    [:li [:a {:href   (get-in youtube-links [:playlists :practicalli-clojure-webapps])
-              :target "_blank"}
-          [:span {:class "icon"}
-           [:i {:class "fab fa-youtube"}]]
-          "Clojure Server-side WebApps & APIs"]]
     [:li [:a {:href   (get-in youtube-links [:playlists :practicalli-clojure-cli-tools])
               :target "_blank"}
           [:span {:class "icon"}
            [:i {:class "fab fa-youtube"}]]
           "Clojure CLI tools and deps.edn"]]
+    [:li [:a {:href   (get-in youtube-links [:playlists :practicalli-spacemacs])
+              :target "_blank"}
+          [:span {:class "icon"}
+           [:i {:class "fab fa-youtube"}]]
+          "Spacemacs - Emacs and Vim tools for (Clojure) development"]]
+    [:li [:a {:href   (get-in youtube-links [:playlists :practicalli-4clojure-guides])
+              :target "_blank"}
+          [:span {:class "icon"}
+           [:i {:class "fab fa-youtube"}]]
+          "4Clojure Guides"]]
+    [:li [:a {:href   (get-in youtube-links [:playlists :practicalli-clojure-spec])
+              :target "_blank"}
+          [:span {:class "icon"}
+           [:i {:class "fab fa-youtube"}]]
+          "Clojure Spec & Generative Testing"]]
+    [:li [:a {:href   (get-in youtube-links [:playlists :practicalli-clojure-webapps])
+              :target "_blank"}
+          [:span {:class "icon"}
+           [:i {:class "fab fa-youtube"}]]
+          "Clojure Server-side WebApps & APIs"]]
     [:li [:a {:href   (get-in youtube-links [:playlists :practicalli-clojure-data-science])
               :target "_blank"}
           [:span {:class "icon"}
            [:i {:class "fab fa-youtube"}]]
           "Clojure Data Science and Visualization"]]
-    [:li [:a {:href   (get-in youtube-links [:playlists :practicalli-spacemacs])
-              :target "_blank"}
-          [:span {:class "icon"}
-           [:i {:class "fab fa-youtube"}]]
-          "Spacemacs - Emacs and Vim tools for (Clojure) development"]]]
+    ]
    ])
 
 
