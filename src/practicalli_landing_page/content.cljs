@@ -107,17 +107,23 @@
        [:p
         "Follow the project development activities during the sponsorship"]
        [:ul
-        [:li [:a {:href (get-in sponsor [:reports :update1])}
+        [:li [:a {:href   (get-in sponsor [:reports :update1])
+                  :target "_blank"}
               "Project update: May 01-15"]]
-        #_[:li [:a {:href (get-in sponsor [:reports :update2])}
-                "Project update: May 16-30"]]
-        #_[:li [:a {:href (get-in sponsor [:reports :update3])}
-                "Project update: June 01-15"]]
-        #_[:li [:a {:href (get-in sponsor [:reports :update4])}
+        [:li [:a {:href   (get-in sponsor [:reports :update2])
+                  :target "_blank"}
+              "Project update: May 16-30"]]
+        [:li [:a {:href   (get-in sponsor [:reports :update3])
+                  :target "_blank"}
+              "Project update: June 01-15"]]
+        #_[:li [:a {:href   (get-in sponsor [:reports :update4])
+                    :target "_blank"}
                 "Project update: June 16-30"]]
-        #_[:li [:a {:href (get-in sponsor [:reports :update5])}
+        #_[:li [:a {:href   (get-in sponsor [:reports :update5])
+                    :target "_blank"}
                 "Project update: July 01-15"]]
-        #_[:li [:a {:href (get-in sponsor [:reports :update6])}
+        #_[:li [:a {:href   (get-in sponsor [:reports :update6])
+                    :target "_blank"}
                 "Project update: July 16-30"]]]
        ]]]]])
 
