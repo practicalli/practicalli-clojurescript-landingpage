@@ -218,6 +218,10 @@
         [:p {:class "content has-text-centered"}
          "Powerful editing with Emacs and Vim multi-modal editing, with a mnemonic menu that simplifies the learning curve.  Install a full Clojure development experience with two Git commands."]
         [:p {:class "has-text-centered"}
+         [:a {:href   "https://github.com/practicalli/spacemacs-content/commits/"
+              :target "_blank"}
+          [:img {:src "https://img.shields.io/github/commit-activity/y/practicalli/spacemacs-content?style=for-the-badge"
+                 :alt "Monthly commits on GitHub"}]]
          [:a {:href   "https://github.com/practicalli/spacemacs-content/issues"
               :target "_blank"}
           [:img {:src "https://img.shields.io/github/issues/practicalli/spacemacs-content?color=purple&label=content%20ideas"
@@ -235,6 +239,10 @@
         [:p {:class "has-text-centered"}
          "Build server-side apps, micro-services and API's"]
         [:p {:class "has-text-centered"}
+         [:a {:href   "https://github.com/practicalli/clojure-webapps-content/commits/"
+              :target "_blank"}
+          [:img {:src "https://img.shields.io/github/commit-activity/y/practicalli/clojure-webapps-content?style=for-the-badge"
+                 :alt "Monthly commits on GitHub"}]]
          [:a {:href   "https://github.com/practicalli/clojure-webapps-content/issues"
               :target "_blank"}
           [:img {:src "https://img.shields.io/github/issues/practicalli/clojure-webapps-content?color=green&label=content%20ideas"
@@ -261,6 +269,10 @@
         [:p {:class "has-text-centered"}
          "Learn the Clojure language through REPL driven development, using Clojure CLI tools and deps.edn"]
         [:p {:class "has-text-centered"}
+         [:a {:href   "https://github.com/practicalli/clojure-practicalli-content/commits/"
+              :target "_blank"}
+          [:img {:src "https://img.shields.io/github/commit-activity/y/practicalli/clojure-practicalli-content?style=for-the-badge"
+                 :alt "Monthly commits on GitHub"}]]
          [:a {:href   "https://github.com/practicalli/clojure-practicalli-content/issues"
               :target "_blank"}
           [:img {:src "https://img.shields.io/github/issues/practicalli/clojure-practicalli-content?color=green&label=content%20ideas"
@@ -278,6 +290,10 @@
         [:p {:class "has-text-centered"}
          "Learn ClojureScript to build single page apps (SPA's), dynamic UI's and mobile apps. Using figwheel-main (and eventually shadow-cljs) along with reagent (and eventually re-frame)"]
         [:p {:class "has-text-centered"}
+         [:a {:href   "https://github.com/practicalli/clojurescript-content/commits/"
+              :target "_blank"}
+          [:img {:src "https://img.shields.io/github/commit-activity/y/practicalli/clojurescript-content?style=for-the-badge"
+                 :alt "Monthly commits on GitHub"}]]
          [:a {:href   "https://github.com/practicalli/clojurescript-content/issues"
               :target "_blank"}
           [:img {:src "https://img.shields.io/github/issues/practicalli/clojurescript-content?color=blue&label=content%20ideas"
