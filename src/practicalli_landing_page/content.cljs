@@ -93,7 +93,7 @@
      [:a {:href   (:url sponsor)
           :target "_blank"}
       [:h2 {:class "title has-text-centered"}
-       "Sponsored by Clojurists Together - May-June 2020"]]]
+       "Sponsored by Clojurists Together - May-July 2020"]]]
 
     [:div {:class "columns is-vcentered"}
      [:div {:class "column"}
