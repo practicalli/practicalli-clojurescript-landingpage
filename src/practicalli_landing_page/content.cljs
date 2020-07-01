@@ -116,9 +116,9 @@
         [:li [:a {:href   (get-in sponsor [:reports :update3])
                   :target "_blank"}
               "Project update: June 01-15"]]
-        #_[:li [:a {:href   (get-in sponsor [:reports :update4])
-                    :target "_blank"}
-                "Project update: June 16-30"]]
+        [:li [:a {:href   (get-in sponsor [:reports :update4])
+                  :target "_blank"}
+              "Project update: June 16-30"]]
         #_[:li [:a {:href   (get-in sponsor [:reports :update5])
                     :target "_blank"}
                 "Project update: July 01-15"]]

@@ -72,7 +72,7 @@
                                     :reports {:update1 "https://github.com/practicalli/clojurists-together-journal/blob/master/2020-May-01-15.md"
                                               :update2 "https://github.com/practicalli/clojurists-together-journal/blob/master/2020-May-16-31.md"
                                               :update3 "https://github.com/practicalli/clojurists-together-journal/blob/master/2020-June-01-15.md"
-                                              :update4 ""
+                                              :update4 "https://github.com/practicalli/clojurists-together-journal/blob/master/2020-June-16-30.md"
                                               :update5 ""
                                               :update6 ""}}}}))
 
