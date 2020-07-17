@@ -48,6 +48,9 @@ To create a production build run:
     lein clean
     lein fig:live
 
+> The fig:live build will write the generated javascript code in the `/docs/cljs-out/dev-main.js` file.
+
+
 ### Deploying to Test
 
 Copy the following files and directories to the `/docs` directory:
@@ -55,10 +58,6 @@ Copy the following files and directories to the `/docs` directory:
 - `resources/public/index.html`
 - `resources/public/css`
 - `resources/public/images`
-
-Also copy the following file to `/docs/cljs-out/` directory
-
-- `resources/public/cljs-out/dev-main.js`
 
 Committing these files in the `/docs` directory will update [the test environment for this project](https://practicalli.github.io/practicalli-landing-page/), allowing deployed changes to be viewed before pushing to live.
 
