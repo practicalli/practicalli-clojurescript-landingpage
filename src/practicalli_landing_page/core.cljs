@@ -74,7 +74,7 @@
                                               :update3 "https://github.com/practicalli/clojurists-together-journal/blob/live/2020-June-01-15.md"
                                               :update4 "https://github.com/practicalli/clojurists-together-journal/blob/live/2020-June-16-30.md"
                                               :update5 "https://github.com/practicalli/clojurists-together-journal/blob/live/2020-July-01-15.md"
-                                              :update6 ""}}}}))
+                                              :update6 "https://github.com/practicalli/clojurists-together-journal/blob/live/2020-July-16-31.md"}}}}))
 
 
 ;; Website structure
