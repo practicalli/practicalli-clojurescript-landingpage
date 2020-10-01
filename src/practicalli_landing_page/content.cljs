@@ -252,6 +252,28 @@
                  :alt "Content ideas as GitHub issues"}]]]]
 
        [:div {:class "column"}
+        [:a {:href   "https://practicalli.github.io/clojure/"
+             :target "_blank"}
+         [:figure {:class "image"}
+          [:img {:src "images/practicalli-clojure-book-banner.png"}]]]
+        [:p {:class "has-text-centered"}
+         "Learn the Clojure language through REPL driven development, using Clojure CLI tools and deps.edn"]
+        [:p {:class "has-text-centered"}
+         [:a {:href   "https://github.com/practicalli/clojure-practicalli-content/commits/"
+              :target "_blank"}
+          [:img {:src "https://img.shields.io/github/commit-activity/y/practicalli/clojure-practicalli-content?style=for-the-badge"
+                 :alt "Monthly commits on GitHub"}]]
+         [:a {:href   "https://github.com/practicalli/clojure-practicalli-content/issues"
+              :target "_blank"}
+          [:img {:src "https://img.shields.io/github/issues/practicalli/clojure-practicalli-content?style=for-the-badge&color=purple&label=content%20ideas"
+                 :alt "Content ideas as GitHub issues"}]]
+         [:a {:href   "https://github.com/practicalli/clojure-practicalli-content/pulls"
+              :target "_blank"}
+          [:img {:src "https://img.shields.io/github/issues-pr/practicalli/clojure-practicalli-content?style=for-the-badge&color=yellow&label=pull%20requests"
+                 :alt "Content ideas as GitHub issues"}]]]]
+
+
+       [:div {:class "column"}
         [:a {:href   "https://practicalli.github.io/clojure-webapps/"
              :target "_blank"}
          [:figure {:class "image"}
@@ -278,35 +300,15 @@
     [:div {:class "columns"}
      [:div {:class "column"}
       [:h2 {:class "title has-text-centered"}
-       "Books under major re-development"]
+       "Alpha stage books"]
       [:div {:class "columns"}
 
-       [:div {:class "column"}
-        [:a {:href   "https://practicalli.github.io/clojure/"
-             :target "_blank"}
-         [:figure {:class "image"}
-          [:img {:src "images/practicalli-clojure-book-banner.png"}]]]
-        [:p {:class "has-text-centered"}
-         "Learn the Clojure language through REPL driven development, using Clojure CLI tools and deps.edn"]
-        [:p {:class "has-text-centered"}
-         [:a {:href   "https://github.com/practicalli/clojure-practicalli-content/commits/"
-              :target "_blank"}
-          [:img {:src "https://img.shields.io/github/commit-activity/y/practicalli/clojure-practicalli-content?style=for-the-badge"
-                 :alt "Monthly commits on GitHub"}]]
-         [:a {:href   "https://github.com/practicalli/clojure-practicalli-content/issues"
-              :target "_blank"}
-          [:img {:src "https://img.shields.io/github/issues/practicalli/clojure-practicalli-content?style=for-the-badge&color=purple&label=content%20ideas"
-                 :alt "Content ideas as GitHub issues"}]]
-         [:a {:href   "https://github.com/practicalli/clojure-practicalli-content/pulls"
-              :target "_blank"}
-          [:img {:src "https://img.shields.io/github/issues-pr/practicalli/clojure-practicalli-content?style=for-the-badge&color=yellow&label=pull%20requests"
-                 :alt "Content ideas as GitHub issues"}]]]]
-
+       ;; Practicalli ClojureScript
        [:div {:class "column"}
         [:a {:href   "https://practicalli.github.io/clojurescript/"
              :target "_blank"}
          [:figure {:class "image"}
-          [:img {:src "images/practicalli-clojurescript-book-banner.png"}]]]
+          [:img {:src "https://raw.githubusercontent.com/practicalli/graphic-design/master/practicalli-clojurescript-book-banner-alpha.png"}]]]
         [:p {:class "has-text-centered"}
          "Learn ClojureScript to build single page apps (SPA's), dynamic UI's and mobile apps. Using figwheel-main (and eventually shadow-cljs) along with reagent (and eventually re-frame)"]
         [:p {:class "has-text-centered"}
@@ -321,6 +323,28 @@
          [:a {:href   "https://github.com/practicalli/clojurescript-content/pulls"
               :target "_blank"}
           [:img {:src "https://img.shields.io/github/issues-pr/practicalli/clojurescript-content?style=for-the-badge&color=yellow&label=pull%20requests"
+                 :alt "Content ideas as GitHub issues"}]]]]
+
+       ;; Practicalli Data Science
+       [:div {:class "column"}
+        [:a {:href   "https://practicalli.github.io/data-science/"
+             :target "_blank"}
+         [:figure {:class "image"}
+          [:img {:src "https://raw.githubusercontent.com/practicalli/graphic-design/master/practicalli-clojure-data-science-book-banner-alpha.png"}]]]
+        [:p {:class "has-text-centered"}
+         "Absolute beginners guide to Data Science with Clojure"]
+        [:p {:class "has-text-centered"}
+         [:a {:href   "https://github.com/practicalli/data-science-content/commits/"
+              :target "_blank"}
+          [:img {:src "https://img.shields.io/github/commit-activity/y/practicalli/data-science-content?style=for-the-badge"
+                 :alt "Monthly commits on GitHub"}]]
+         [:a {:href   "https://github.com/practicalli/data-science-content/issues"
+              :target "_blank"}
+          [:img {:src "https://img.shields.io/github/issues/practicalli/data-science-content?style=for-the-badge&color=purple&label=content%20ideas"
+                 :alt "Content ideas as GitHub issues"}]]
+         [:a {:href   "https://github.com/practicalli/data-science-content/pulls"
+              :target "_blank"}
+          [:img {:src "https://img.shields.io/github/issues-pr/practicalli/data-science-content?style=for-the-badge&color=yellow&label=pull%20requests"
                  :alt "Content ideas as GitHub issues"}]]]]
        ]]]]])
 
