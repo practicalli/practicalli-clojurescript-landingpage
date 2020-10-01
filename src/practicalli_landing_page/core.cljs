@@ -67,14 +67,21 @@
                                     :logo "images/paypal-me-logo.png"}
           :kickstarter             {:url  "/"
                                     :logo "images/kickstarter-logo.jpeg"}
-          :clojurists-together     {:url     "https://www.clojuriststogether.org/"
-                                    :logo    "images/clojurists-together-banner.png"
-                                    :reports {:update1 "https://github.com/practicalli/clojurists-together-journal/blob/live/2020-May-01-15.md"
-                                              :update2 "https://github.com/practicalli/clojurists-together-journal/blob/live/2020-May-16-31.md"
-                                              :update3 "https://github.com/practicalli/clojurists-together-journal/blob/live/2020-June-01-15.md"
-                                              :update4 "https://github.com/practicalli/clojurists-together-journal/blob/live/2020-June-16-30.md"
-                                              :update5 "https://github.com/practicalli/clojurists-together-journal/blob/live/2020-July-01-15.md"
-                                              :update6 "https://github.com/practicalli/clojurists-together-journal/blob/live/2020-July-16-31.md"}}}}))
+          :clojurists-together     {:url  "https://www.clojuriststogether.org/"
+                                    :logo "images/clojurists-together-banner.png"
+                                    :reports
+                                    {:year-2020 {:q2 {:update1 "https://github.com/practicalli/clojurists-together-journal/blob/live/2020-May-01-15.md"
+                                                      :update2 "https://github.com/practicalli/clojurists-together-journal/blob/live/2020-May-16-31.md"
+                                                      :update3 "https://github.com/practicalli/clojurists-together-journal/blob/live/2020-June-01-15.md"
+                                                      :update4 "https://github.com/practicalli/clojurists-together-journal/blob/live/2020-June-16-30.md"
+                                                      :update5 "https://github.com/practicalli/clojurists-together-journal/blob/live/2020-July-01-15.md"
+                                                      :update6 "https://github.com/practicalli/clojurists-together-journal/blob/live/2020-July-16-31.md"}
+                                                 :q3 {:update1 "https://github.com/practicalli/clojurists-together-journal/blob/live/2020-August-16-31.md"
+                                                      :update2 "https://github.com/practicalli/clojurists-together-journal/blob/live/2020-September-01-15.md"
+                                                      :update3 "https://github.com/practicalli/clojurists-together-journal/blob/live/2020-September-16-30.md"
+                                                      :update4 ""
+                                                      :update5 ""
+                                                      :update6 ""}}} }}}))
 
 
 ;; Website structure
