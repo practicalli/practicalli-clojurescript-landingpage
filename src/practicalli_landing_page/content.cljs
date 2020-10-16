@@ -439,28 +439,41 @@
 
        ]]]]])
 
-
+;; {:class "column is-8 is-offset-2"}
 
 (defn contact
   "Ways in which you can contact Practicalli"
   []
   [:div {:class "container"}
    [:div {:class "box"}
+    [:h2 {:class "title has-text-centered"}
+     "Contact and Feedback"]
     [:div {:class "columns"}
 
-     [:div {:class "column is-8 is-offset-2"}
-      [:h2 {:class "title has-text-centered"}
-       "Contact and Feedback"]
+     [:div {:class "column"}
+      [:a {:href   "https://discord.gg/G2JKpw4"
+           :target "_blank"}
+       [:figure {:class "image"}
+        [:img {:src "https://raw.githubusercontent.com/practicalli/graphic-design/master/practicalli-discord-channel.png"}]]]]
 
+     [:div {:class "column"}
+      [:a {:href   "http://clojurians.zulipchat.com/"
+           :target "_blank"}
+       [:figure {:class "image"}
+        [:img {:src "https://raw.githubusercontent.com/practicalli/graphic-design/master/practicalli-zulip-channel.png"}]]]]
+
+     [:div {:class "column"}
       [:a {:href   "https://clojurians.slack.com/messages/practicalli"
            :target "_blank"}
        [:figure {:class "image"}
-        [:img {:src "images/practicalli-slack-channel.png"}]]]
+        [:img {:src "https://raw.githubusercontent.com/practicalli/graphic-design/master/practicalli-slack-channel.png"}]]]
 
       [:a {:href   "http://clojurians.net"
            :target "_blank"}
        [:p {:class "has-text-centered"}
-        "Sign up for a free account to the Clojurians Slack community"]]]]]])
+        "Sign up for a free account to the Clojurians Slack community"]]]
+
+     ]]]) ;; End of contact
 
 
 (defn resources
