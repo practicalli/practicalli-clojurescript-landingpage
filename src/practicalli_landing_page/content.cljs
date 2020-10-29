@@ -308,7 +308,7 @@
         [:a {:href   "https://practicalli.github.io/clojurescript/"
              :target "_blank"}
          [:figure {:class "image"}
-          [:img {:src "https://raw.githubusercontent.com/practicalli/graphic-design/master/practicalli-clojurescript-book-banner-alpha.png"}]]]
+          [:img {:src "https://raw.githubusercontent.com/practicalli/graphic-design/live/practicalli-clojurescript-book-banner-alpha.png"}]]]
         [:p {:class "has-text-centered"}
          "Learn ClojureScript to build single page apps (SPA's), dynamic UI's and mobile apps. Using figwheel-main (and eventually shadow-cljs) along with reagent (and eventually re-frame)"]
         [:p {:class "has-text-centered"}
@@ -330,7 +330,7 @@
         [:a {:href   "https://practicalli.github.io/data-science/"
              :target "_blank"}
          [:figure {:class "image"}
-          [:img {:src "https://raw.githubusercontent.com/practicalli/graphic-design/master/practicalli-clojure-data-science-book-banner-alpha.png"}]]]
+          [:img {:src "https://raw.githubusercontent.com/practicalli/graphic-design/live/practicalli-clojure-data-science-book-banner-alpha.png"}]]]
         [:p {:class "has-text-centered"}
          "Absolute beginners guide to Data Science with Clojure"]
         [:p {:class "has-text-centered"}
