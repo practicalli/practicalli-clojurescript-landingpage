@@ -443,7 +443,7 @@
 
 (defn contact
   "Ways in which you can contact Practicalli"
-  []
+  [contact-channels]
   [:div {:class "container"}
    [:div {:class "box"}
     [:h2 {:class "title has-text-centered"}
@@ -451,22 +451,22 @@
     [:div {:class "columns"}
 
      [:div {:class "column"}
-      [:a {:href   "https://discord.gg/G2JKpw4"
+      [:a {:href   (get-in contact-channels [:discord :practicalli :register])
            :target "_blank"}
        [:figure {:class "image"}
-        [:img {:src "https://raw.githubusercontent.com/practicalli/graphic-design/master/practicalli-discord-channel.png"}]]]]
+        [:img {:src (get-in contact-channels [:discord :practicalli :logo])}]]]]
 
      [:div {:class "column"}
-      [:a {:href   "http://clojurians.zulipchat.com/"
+      [:a {:href   (get-in contact-channels [:zulip :practicalli :url])
            :target "_blank"}
        [:figure {:class "image"}
-        [:img {:src "https://raw.githubusercontent.com/practicalli/graphic-design/master/practicalli-zulip-channel.png"}]]]]
+        [:img {:src (get-in contact-channels [:zulip :practicalli :logo])}]]]]
 
      [:div {:class "column"}
-      [:a {:href   "https://clojurians.slack.com/messages/practicalli"
+      [:a {:href   (get-in contact-channels [:slack :practicalli :url])
            :target "_blank"}
        [:figure {:class "image"}
-        [:img {:src "https://raw.githubusercontent.com/practicalli/graphic-design/master/practicalli-slack-channel.png"}]]]
+        [:img {:src (get-in contact-channels [:slack :practicalli :logo])}]]]
 
       [:a {:href   "http://clojurians.net"
            :target "_blank"}
