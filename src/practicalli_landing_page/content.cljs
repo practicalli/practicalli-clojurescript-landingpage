@@ -213,7 +213,7 @@
        [:h2 {:class "title is-2 has-text-centered"}
         "Live Broadcasts"]
        [:h6 {:class "title is-6 has-text-centered"}
-        "A new broadcast every weekend covering Clojure and ClojureScript development"]
+        "Live coding broadcasts to learn together"]
        [:figure {:class "image"}
         [:img {:src "images/practicalli-banner-icons-full-horizontal.png"}]]]]
 
