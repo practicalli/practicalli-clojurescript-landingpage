@@ -74,7 +74,13 @@
       [:h3 {:class "subtitle"}
        "Practical approaches to learning Functional Programming with Clojure"]
       [:div {:div "content"}
-       "YouTube broadcasts, screencasts, books and guides to support your journey into Clojure"]]
+       "Getting started with Clojure programming via YouTube broadcasts, screencasts and books. Learn how to "
+       [:a {:href "https://practicalli.github.io/clojure/clojure-tools/using-clojure-tools.html"}
+        "use Clojure CLI tools"]
+       " to create and develop Clojure projects.  Follow guides to install and get started with "
+       [:a {:href "https://practicalli.github.io/clojure/clojure-editors/"}
+        "Clojure aware editors"]
+       "."]]
      ]]])
 
 
