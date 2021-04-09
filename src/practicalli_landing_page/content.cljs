@@ -83,6 +83,33 @@
        "."]]
      ]]])
 
+(defn title-banner-covid
+  "Top banner and navigation for the website during covid symptoms"
+  []
+  [:section {:class "section"}
+   [:div {:class "container"}
+    [:div {:class "columns is-vcentered"}
+
+     [:div {:class "column is-2 is-offset-1"}
+      [:img {:src   "images/practicalli-logo.png"
+             :width "160px"}]]
+
+     [:div {:class "column"}
+      [:h1 {:class "title is-1"}
+       "Practicalli"]
+      [:h3 {:class "subtitle"}
+       "Practical approaches to learning Functional Programming with Clojure"]
+      [:div {:class "content"}
+       "Getting started with Clojure programming via YouTube broadcasts, screencasts and books. Learn how to "
+       [:a {:href "https://practicalli.github.io/clojure/clojure-tools/using-clojure-tools.html"}
+        "use Clojure CLI tools"]
+       " to create and develop Clojure projects.  Follow guides to install and get started with "
+       [:a {:href "https://practicalli.github.io/clojure/clojure-editors/"}
+        "Clojure aware editors"]
+       "."]
+      [:div {:class "content is-size-5 is-italic"}
+       "Live broadcasts and content updates are on hold as the Practicalli team contracted Covid19 in January and is still suffering from the symptoms"
+       ]]]]])
 
 
 (defn sponsorship
