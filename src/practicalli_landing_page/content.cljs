@@ -431,16 +431,12 @@
     [:div {:class "columns"}
 
      [:div {:class "column"}
-      [:a {:href   (get-in contact-channels [:discord :practicalli :register])
-           :target "_blank"}
-       [:figure {:class "image"}
-        [:img {:src (get-in contact-channels [:discord :practicalli :logo])}]]]]
-
-     [:div {:class "column"}
       [:a {:href   (get-in contact-channels [:zulip :practicalli :url])
            :target "_blank"}
        [:figure {:class "image"}
-        [:img {:src (get-in contact-channels [:zulip :practicalli :logo])}]]]]
+        [:img {:src (get-in contact-channels [:zulip :practicalli :logo])}]]]
+      [:p {:class "has-text-centered"}
+       "Contains searchable archive of Clojurians Slack discussions"]]
 
      [:div {:class "column"}
       [:a {:href   (get-in contact-channels [:slack :practicalli :url])

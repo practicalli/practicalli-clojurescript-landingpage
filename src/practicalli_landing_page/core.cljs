@@ -56,18 +56,13 @@
 
          :contact-channels
          {:slack   {:clojurians  "https://clojurians.slack.com/"
-                    :practicalli {:url "https://clojurians.slack.com/messages/practicalli"
+                    :practicalli {:url  "https://clojurians.slack.com/messages/practicalli"
                                   :logo "https://raw.githubusercontent.com/practicalli/graphic-design/live/practicalli-slack-channel.png"}
                     :spacemacs   "https://clojurians.zulipchat.com/#narrow/stream/spacemacs"}
           :zulip   {:clojurians  "https://clojurians.zulipchat.com/"
-                    :practicalli {:url "https://clojurians.zulipchat.com/#narrow/stream/practicalli"
+                    :practicalli {:url  "https://clojurians.zulipchat.com/#narrow/stream/practicalli"
                                   :logo "https://raw.githubusercontent.com/practicalli/graphic-design/live/practicalli-zulip-channel.png"}
-                    :events      "https://clojurians.zulipchat.com/#narrow/stream/events"}
-          :discord {:apropos     ""
-                    :conjure     ""
-                    :practicalli {:register "https://discord.gg/G2JKpw4"
-                                  :url      ""
-                                  :logo "https://raw.githubusercontent.com/practicalli/graphic-design/live/practicalli-discord-channel.png"}}}
+                    :events      "https://clojurians.zulipchat.com/#narrow/stream/events"}}
 
          :support-channels
          {:youtube-subscribe       {:url  "https://www.youtube.com/channel/UCLsiVY-kWVH1EqgEtZiREJw?sub_confirmation=1"
