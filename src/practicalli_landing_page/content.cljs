@@ -467,37 +467,37 @@
        [:tbody
         [:tr
          [:th
-          [:a {:href "https://clojuredocs.org/"} "Clojure docs"]]
+          [:a {:href "https://clojuredocs.org/" :target "_blank"} "Clojure docs"]]
          [:td "docs for functions"]]
         [:tr
          [:th
-          [:a {:href "https://clojure.org/"} "Clojure.org"]]
+          [:a {:href "https://clojure.org/" :target "_blank"} "Clojure.org"]]
          [:td "language and concepts"]]
         [:tr
          [:th
-          [:a {:href "https://clojure.org/"} "CljDocs"]]
-         [:td "search library docs"]]]]]
+          [:a {:href "https://cljdoc.org/" :target "_blank"} "CljDocs"]]
+         [:td "search library docs"]]
+        [:tr
+         [:th
+          [:a {:href "https://clojuredesign.club/" :target "_blank"} "Clojure Design Club"]]
+         [:td "Podcast discussing Clojure design"]]]]]
+
 
      [:div {:class "column"}
-      [:h4 {:class "title is-4"} "Practising"]
+      [:h4 {:class "title is-4"} "Practicing"]
       [:table {:class "table"}
        [:tbody
         [:tr
          [:th
-          [:a {:href "http://www.4clojure.com/"} "4Clojure"]]
+          [:a {:href "http://www.4clojure.com/" :target "_blank"} "4Clojure"]]
          [:td "learn Clojure functions"]]
         [:tr
          [:th
-          [:a {:href "https://exercism.io/tracks/clojure"} "Exercism"]
-          ]
+          [:a {:href "https://exercism.io/tracks/clojure" :target "_blank"} "Exercism"]]
          [:td "code practice & mentorship"]]
         [:tr
          [:th
-          [:a {:href "https://www.codewars.com/?language=clojure"} "Code Wars"]]
-         [:td "real coding challenges"]]
-        [:tr
-         [:th
-          [:a {:href "https://www.codingame.com/"} "CodinGame"]]
+          [:a {:href "https://www.codingame.com/" :target "_blank"} "CodinGame"]]
          [:td "practice & learn the fun way"]]]]]
 
      [:div {:class "column"}
@@ -506,16 +506,17 @@
        [:tbody
         [:tr
          [:th
-          [:a {:href "https://github.com/clojure-cookbook/clojure-cookbook"} "Clojure Cookbook"]]]
+          [:a {:href "https://github.com/clojure-cookbook/clojure-cookbook"
+               :target "_blank"} "Clojure Cookbook"]]]
         [:tr
          [:th
-          [:a {:href "http://practicalli.github.io/"} "Practicalli Clojure"]]]
+          [:a {:href "http://practicalli.github.io/" :target "_blank"} "Practicalli Clojure"]]]
         [:tr
          [:th
-          [:a {:href "http://funcool.github.io/clojurescript-unraveled/"} "ClojureScript Unraveled"]]]
+          [:a {:href "http://funcool.github.io/clojurescript-unraveled/" :target "_blank"} "ClojureScript Unraveled"]]]
         [:tr
          [:th
-          [:a {:href "https://www.braveclojure.com/clojure-for-the-brave-and-true/"} "Brave Clojure"]]]]]]
+          [:a {:href "https://www.braveclojure.com/clojure-for-the-brave-and-true/" :target "_blank"} "Brave Clojure"]]]]]]
 
      [:div {:class "column"}
       [:h4 {:class "title is-4"} "Videos"]
@@ -523,19 +524,19 @@
        [:tbody
         [:tr
          [:th
-          [:a {:href "https://www.youtube.com/user/ClojureTV"} "Clojure TV"]]
+          [:a {:href "https://www.youtube.com/user/ClojureTV" :target "_blank"} "Clojure TV"]]
          [:td "conference talks"]]
         [:tr
          [:th
-          [:a {:href "https://www.youtube.com/watch?v=9A9qsaZZefw&list=PLAC43CFB134E85266"} "Clojure Language"]]
+          [:a {:href "https://www.youtube.com/watch?v=9A9qsaZZefw&list=PLAC43CFB134E85266" :target "_blank"} "Clojure Language"]]
          [:td "describing language concepts"]]
         [:tr
          [:th
-          [:a {:href "https://www.youtube.com/watch?v=MZcuL4lRw5E&list=PLy9I_IfUBzKJSgctCJaRYcnF6kZdiZ5ku"} "Practicalli study group"]]
+          [:a {:href "https://www.youtube.com/playlist?list=PLpr9V-R8ZxiDjyU7cQYWOEFBDR1t7t0wv" :target "_blank"} "Practicalli study group"]]
          [:td "weekly practical lessons"]]
         [:tr
          [:th
-          [:a {:href "http://www.parens-of-the-dead.com/"} "Parens of the dead"]]
+          [:a {:href "http://www.parens-of-the-dead.com/" :target "_blank"} "Parens of the dead"]]
          [:td "a card game in Clojure"]]]]]]]])
 
 
