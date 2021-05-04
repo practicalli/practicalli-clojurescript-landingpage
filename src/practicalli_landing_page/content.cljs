@@ -384,95 +384,42 @@
 
 
 (defn support-practicalli
-  "Ways in which you can support Practicalli"
+  "Ways in which you can contact Practicalli"
   [support-channels]
   [:div {:class "container"}
    [:div {:class "box"}
+    [:h2 {:class "title has-text-centered"}
+     "Support Practicalli"]
     [:div {:class "columns"}
 
      [:div {:class "column"}
-      [:h2 {:class "title has-text-centered"}
-       "Support Practicalli"]
-      [:h3 {:class "subtitle has-text-centered"}
-       "Help me create more content for everyone.  Motivation and financial support are always welcome."]
+      [:a {:href   (-> support-channels :youtube-subscribe :url)
+           :target "_blank"}
+       [:figure {:class "image"}
+        [:img {:src (-> support-channels :youtube-subscribe :logo)}]]]
+      [:p {:class "has-text-centered"}
+       "Subscribe and share free video tutorials"]]
 
-      [:div {:class "columns is-vcentered"}
+     [:div {:class "column"}
+      [:a {:href   (-> support-channels :github-sponsors :url)
+           :target "_blank"}
+       [:figure {:class "image"}
+        [:img {:src (-> support-channels :github-sponsors :logo)}]]]
 
-       ;; YouTube Subscription
+      [:p {:class "has-text-centered"}
+       "Join the many sponsors via GitHub"]]
 
-       [:div {:class "column"}
-        [:div {:class "card"}
-         [:div {:class "card-image"}
-          [:a {:href   "http://yt.vu/+practicalli"
-               :target "_blank"}
-           [:figure {:class "image is-square"}
-            [:img {:src "images/youtube-subscribe-button.jpg"}]]]]
-         [:div {:class "card-content"}
-          "Free Subscription"]]]
+     [:div {:class "column"}
+      [:a {:href   (-> support-channels :paypal-me :url)
+           :target "_blank"}
+       [:figure {:class "image"}
+        [:img {:src (-> support-channels :paypal-me :logo)}]]]
 
+      [:p {:class "has-text-centered"}
+       "Direct Contributions in any currency"]]
 
-       ;; Charity cycle ride
+     ]]])
 
-       ;; [:div {:class "column"}
-
-       ;;  [:div {:class "card"}
-       ;;   [:div {:class "card-image"}
-
-       ;;    [:a {:href   (get-in support-channels [:brompton-across-britain :url])
-       ;;         :target "_blank"}
-       ;;     [:figure {:class "image is-square"}
-       ;;      [:img {:src (get-in support-channels [:brompton-across-britain :logo])}]]]]
-       ;;   [:div {:class "card-content"}
-       ;;    "My 1000 mile UK charity ride" ]]]
-
-
-       ;; Paypal.me
-
-       [:div {:class "column"}
-
-        [:div {:class "card"}
-         [:div {:class "card-image"}
-          [:a {:href   (get-in support-channels [:paypal-me :url])
-               :target "_blank"}
-           [:figure {:class "image is-square"}
-            [:img {:src (get-in support-channels [:paypal-me :logo])}]]]
-          ]
-         [:div {:class "card-content"}
-          "Donation in any currency" ]]]
-
-
-       ;; GitHub sponsors
-
-       [:div {:class "column"}
-
-        [:div {:class "card"}
-         [:div {:class "card-image"}
-          [:a {:href   (get-in support-channels [:github-sponsors :url])
-               :target "_blank"}
-           [:figure {:class "image is-square"}
-            [:img {:src (get-in support-channels [:github-sponsors :logo])}]]]]
-         [:div {:class "card-content"}
-          "GitHub Sponsor (US Dollars)" ]]]
-
-       ;; Sponsorship channels not used yet
-
-       #_[:div {:class "column"}
-          [:a {:href   (get-in support-channels [:patreon :url])
-               :target "_blank"}
-           [:figure {:class "image"}
-            [:img {:src (get-in support-channels [:patreon :logo])}]]]]
-
-       #_[:div {:class "column"}
-          [:h {:class "title is-4 has-text-centered"}
-           "Specific campaigns coming soon!"]
-          [:a {:href   (get-in support-channels [:kickstarter :url])
-               :target "_blank"}
-           [:figure {:class "image"}
-            [:img {:src (get-in support-channels [:kickstarter :logo])}]]]]
-
-       ]]]]])
-
-;; {:class "column is-8 is-offset-2"}
 
 (defn contact
   "Ways in which you can contact Practicalli"

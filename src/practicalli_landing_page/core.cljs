@@ -70,14 +70,16 @@
                                   :logo "https://raw.githubusercontent.com/practicalli/graphic-design/live/practicalli-discord-channel.png"}}}
 
          :support-channels
-         {:brompton-across-britain {:url  "https://brompton-across-britain.github.io/"
+         {:youtube-subscribe       {:url  "https://www.youtube.com/channel/UCLsiVY-kWVH1EqgEtZiREJw?sub_confirmation=1"
+                                    :logo "https://raw.githubusercontent.com/practicalli/graphic-design/live/practicalli-youtube-channel-subscribe.png"}
+          :github-sponsors         {:url  "https://github.com/sponsors/practicalli-john/"
+                                    :logo "https://raw.githubusercontent.com/practicalli/graphic-design/live/practicalli-github-sponsors-button.png"}
+          :brompton-across-britain {:url  "https://brompton-across-britain.github.io/"
                                     :logo "images/brompton-across-britain-bike.png"}
-          :github-sponsors         {:url  "https://github.com/sponsors/jr0cket"
-                                    :logo "images/github-sponsors-mona.png"}
           :patreon                 {:url  "https://www.patreon.com/practicalli"
                                     :logo "images/patreon-navy.png"}
           :paypal-me               {:url  "https://paypal.me/practicalli"
-                                    :logo "images/paypal-me-logo.png"}
+                                    :logo "https://raw.githubusercontent.com/practicalli/graphic-design/live/practicalli-paypal-me-button.png"}
           :kickstarter             {:url  "/"
                                     :logo "images/kickstarter-logo.jpeg"}
           :clojurists-together     {:url  "https://www.clojuriststogether.org/"
