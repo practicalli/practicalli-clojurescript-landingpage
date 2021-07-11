@@ -330,56 +330,126 @@
 
    ;; Books under heavy development
    [:div {:class "box"}
-    [:div {:class "columns"}
+    [:div {:class "column"}
+     [:h2 {:class "title has-text-centered"}
+      "Alpha stage books"]]
+
+
+    ;; Practicalli ClojureScript
+    [:div {:class "column"}
+     [:div {:class "columns"}
+
+      ;; Book banner logo
+      [:div {:class "column"}
+       [:a {:href   "https://practical.li/clojurescript/"
+            :target "_blank"}
+        [:figure {:class "image"}
+         [:img {:src "https://raw.githubusercontent.com/practicalli/graphic-design/live/book-covers/practicalli-clojurescript-book-banner-alpha.png"}]]]]
+
+      ;; Book description
+      [:div {:class "column"}
+
+       [:p
+        [:a {:href "https://practical.li/clojurescript/"
+             :target "_blank"
+             :class "has-text-weight-bold"}
+         "Practicalli ClojureScript"]
+        " - build single page apps (SPA's), dynamic UI's and mobile apps with responsive design. "]
+       [:p
+        "Figwheel-main provides instant feedback during development, pushing changes to the browser as they are saved " ]
+       [:p
+        "Reagent library is an interface to React, driving UI components (functions) with immutable Clojure data structures"]
+
+       [:p {:class "has-text-centered"}
+        [:a {:href   "https://github.com/practicalli/clojurescript-content/commits/"
+             :target "_blank"}
+         [:img {:src "https://img.shields.io/github/commit-activity/y/practicalli/clojurescript-content?style=for-the-badge"
+                :alt "Monthly commits on GitHub"}]]
+        [:a {:href   "https://github.com/practicalli/clojurescript-content/issues"
+             :target "_blank"}
+         [:img {:src "https://img.shields.io/github/issues/practicalli/clojurescript-content?style=for-the-badge&color=purple&label=content%20ideas"
+                :alt "Content ideas as GitHub issues"}]]
+        [:a {:href   "https://github.com/practicalli/clojurescript-content/pulls"
+             :target "_blank"}
+         [:img {:src "https://img.shields.io/github/issues-pr/practicalli/clojurescript-content?style=for-the-badge&color=yellow&label=pull%20requests"
+                :alt "Content ideas as GitHub issues"}]]]]]]
+
+    ;; Practicalli Data Science
+    [:div {:class "column"}
+     [:div {:class "columns"}
+
+      ;; Book banner logo
+      [:div {:class "column"}
+       [:a {:href   "https://practical.li/data-science/"
+            :target "_blank"}
+        [:figure {:class "image"}
+         [:img {:src "https://raw.githubusercontent.com/practicalli/graphic-design/live/book-covers/practicalli-clojure-data-science-book-banner-alpha.png"}]]]]
+
+      ;; Book description
+      [:div {:class "column"}
+       [:p
+        [:a {:href   "https://practical.li/data-science/"
+             :target "_blank"
+             :class  "has-text-weight-bold"}
+         "Practicalli Data Science with Clojure"]
+        " - discover Clojure tools and techniques when working with data science related projects."]
+       [:p "Ingest data from various sources into Clojure data structures.   "]
+       [:p "Transform Clojure data structures using fast and efficient community libraries"]
+       [:p "Visualise data to communicate meaning from data sets"]
+       [:p {:class "has-text-centered"}
+        [:a {:href   "https://github.com/practicalli/data-science-content/commits/"
+             :target "_blank"}
+         [:img {:src "https://img.shields.io/github/commit-activity/y/practicalli/data-science-content?style=for-the-badge"
+                :alt "Monthly commits on GitHub"}]]
+        [:a {:href   "https://github.com/practicalli/data-science-content/issues"
+             :target "_blank"}
+         [:img {:src "https://img.shields.io/github/issues/practicalli/data-science-content?style=for-the-badge&color=purple&label=content%20ideas"
+                :alt "Content ideas as GitHub issues"}]]
+        [:a {:href   "https://github.com/practicalli/data-science-content/pulls"
+             :target "_blank"}
+         [:img {:src "https://img.shields.io/github/issues-pr/practicalli/data-science-content?style=for-the-badge&color=yellow&label=pull%20requests"
+                :alt "Content ideas as GitHub issues"}]]]]]
+
+
+     ;; Practicalli Clojure Kafka
      [:div {:class "column"}
-      [:h2 {:class "title has-text-centered"}
-       "Alpha stage books"]
       [:div {:class "columns"}
 
-       ;; Practicalli ClojureScript
+       ;; Book banner logo
        [:div {:class "column"}
-        [:a {:href   "https://practicalli.github.io/clojurescript/"
+        [:a {:href   "https://practical.li/clojure-kafka/"
              :target "_blank"}
          [:figure {:class "image"}
-          [:img {:src "https://raw.githubusercontent.com/practicalli/graphic-design/live/practicalli-clojurescript-book-banner-alpha.png"}]]]
-        [:p {:class "has-text-centered"}
-         "Learn ClojureScript to build single page apps (SPA's), dynamic UI's and mobile apps. Using figwheel-main (and eventually shadow-cljs) along with reagent (and eventually re-frame)"]
-        [:p {:class "has-text-centered"}
-         [:a {:href   "https://github.com/practicalli/clojurescript-content/commits/"
-              :target "_blank"}
-          [:img {:src "https://img.shields.io/github/commit-activity/y/practicalli/clojurescript-content?style=for-the-badge"
-                 :alt "Monthly commits on GitHub"}]]
-         [:a {:href   "https://github.com/practicalli/clojurescript-content/issues"
-              :target "_blank"}
-          [:img {:src "https://img.shields.io/github/issues/practicalli/clojurescript-content?style=for-the-badge&color=purple&label=content%20ideas"
-                 :alt "Content ideas as GitHub issues"}]]
-         [:a {:href   "https://github.com/practicalli/clojurescript-content/pulls"
-              :target "_blank"}
-          [:img {:src "https://img.shields.io/github/issues-pr/practicalli/clojurescript-content?style=for-the-badge&color=yellow&label=pull%20requests"
-                 :alt "Content ideas as GitHub issues"}]]]]
+          [:img {:src "https://raw.githubusercontent.com/practicalli/graphic-design/live/book-covers/practicalli-clojure-kafka-book-banner-alpha.png"}]]]]
 
-       ;; Practicalli Data Science
+       ;; Book description
        [:div {:class "column"}
-        [:a {:href   "https://practicalli.github.io/data-science/"
-             :target "_blank"}
-         [:figure {:class "image"}
-          [:img {:src "https://raw.githubusercontent.com/practicalli/graphic-design/live/practicalli-clojure-data-science-book-banner-alpha.png"}]]]
+        [:p
+         [:a {:href "https://practical.li/clojure-kafka/"
+              :target "_blank"
+              :class  "has-text-weight-bold"}
+          "Practicalli Clojure Kafka"]
+         " - use Clojure with Apache Kafka to build immutable event stream services."]
+        [:p
+         "Define specifications to validate data consumed and produced to Kafka topics." ]
+        [:p "Use Jackdaw library to control Kafka and write Kafka Stream applications"]
         [:p {:class "has-text-centered"}
-         "Absolute beginners guide to Data Science with Clojure"]
-        [:p {:class "has-text-centered"}
-         [:a {:href   "https://github.com/practicalli/data-science-content/commits/"
+         [:a {:href   "https://github.com/practicalli/clojure-kafka-content/commits/"
               :target "_blank"}
-          [:img {:src "https://img.shields.io/github/commit-activity/y/practicalli/data-science-content?style=for-the-badge"
+          [:img {:src "https://img.shields.io/github/commit-activity/y/practicalli/clojure-kafka-content?style=for-the-badge"
                  :alt "Monthly commits on GitHub"}]]
-         [:a {:href   "https://github.com/practicalli/data-science-content/issues"
+         [:a {:href   "https://github.com/practicalli/clojure-kafka-content/issues"
               :target "_blank"}
-          [:img {:src "https://img.shields.io/github/issues/practicalli/data-science-content?style=for-the-badge&color=purple&label=content%20ideas"
+          [:img {:src "https://img.shields.io/github/issues/practicalli/clojure-kafka-content?style=for-the-badge&color=purple&label=content%20ideas"
                  :alt "Content ideas as GitHub issues"}]]
-         [:a {:href   "https://github.com/practicalli/data-science-content/pulls"
+         [:a {:href   "https://github.com/practicalli/clojure-kafka-content/pulls"
               :target "_blank"}
-          [:img {:src "https://img.shields.io/github/issues-pr/practicalli/data-science-content?style=for-the-badge&color=yellow&label=pull%20requests"
-                 :alt "Content ideas as GitHub issues"}]]]]
-       ]]]]])
+          [:img {:src "https://img.shields.io/github/issues-pr/practicalli/clojure-kafka-content?style=for-the-badge&color=yellow&label=pull%20requests"
+                 :alt "Content ideas as GitHub issues"}]]]
+        ]]]]
+
+
+    ]])
 
 
 
