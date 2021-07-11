@@ -453,16 +453,14 @@
 
 
 (defn resources
-  "Useful resources during the workshop.
-
-  Where to go next after the workshop."
+  "Useful resources for learning and practicing Clojure"
   []
   [:div {:class "container"}
    [:div {:class "box"}
     [:div {:class "columns"}
 
      [:div {:class "column"}
-      [:h4 {:class "title is-4"} "Resources"]
+      [:h4 {:class "title is-4"} "Discovering Clojure"]
       [:table {:class "table"}
        [:tbody
         [:tr
@@ -479,17 +477,21 @@
          [:td "search library docs"]]
         [:tr
          [:th
+          [:a {:href "https://borkdude.github.io/re-find.web/" :target "_blank"} "re-find"]]
+         [:td "suggest Clojure function from args & return value"]]
+        [:tr
+         [:th
           [:a {:href "https://clojuredesign.club/" :target "_blank"} "Clojure Design Club"]]
-         [:td "Podcast discussing Clojure design"]]]]]
+         [:td "podcast discussing Clojure design"]]]]]
 
 
      [:div {:class "column"}
-      [:h4 {:class "title is-4"} "Practicing"]
+      [:h4 {:class "title is-4"} "Practicing Clojure"]
       [:table {:class "table"}
        [:tbody
         [:tr
          [:th
-          [:a {:href "http://www.4clojure.com/" :target "_blank"} "4Clojure"]]
+          [:a {:href "https://4clojure.oxal.org/" :target "_blank"} "4Ever-Clojure"]]
          [:td "learn Clojure functions"]]
         [:tr
          [:th
@@ -501,7 +503,7 @@
          [:td "practice & learn the fun way"]]]]]
 
      [:div {:class "column"}
-      [:h4 {:class "title is-4"} "Online books"]
+      [:h4 {:class "title is-4"} "Clojure ebooks"]
       [:table {:class "table"}
        [:tbody
         [:tr
@@ -519,7 +521,7 @@
           [:a {:href "https://www.braveclojure.com/clojure-for-the-brave-and-true/" :target "_blank"} "Brave Clojure"]]]]]]
 
      [:div {:class "column"}
-      [:h4 {:class "title is-4"} "Videos"]
+      [:h4 {:class "title is-4"} "Clojure Videos"]
       [:table {:class "table"}
        [:tbody
         [:tr
