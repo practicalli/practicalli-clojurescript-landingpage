@@ -14,7 +14,9 @@
   (:require
    [goog.dom :as gdom]
    [reagent.core :as reagent :refer [atom]]
-   [practicalli-landing-page.content :as content]))
+
+   [practicalli-landing-page.content :as content]
+   [practicalli-landing-page.books   :as books]))
 
 ;; simple debug statement for each build
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -111,7 +113,7 @@
    [content/videos-broadcasts (get @app-state :youtube)]
 
    [content/level-separator "books"]
-   [content/books]
+   [books/book-list books/practicalli-books]
 
    [content/level-separator "contact"]
    [content/contact (get @app-state :contact-channels)]
