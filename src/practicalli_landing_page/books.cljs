@@ -16,7 +16,7 @@
    {:title       "Clojure Web"
     :url         "https://practical.li/clojure-webapps"
     :image       "https://raw.githubusercontent.com/practicalli/graphic-design/live/book-covers/practicalli-clojure-webapps-book-banner.png"
-    :github-repo "clojure-content"
+    :github-repo "clojure-webapp-content"
     :description " - build server-side apps, micro-services and API's in Clojure.  Using Ring as an abstraction over HTTP with requests and responses as simple Clojure hash-maps. Routing of requests are managed by Compojure or Reitit, passing requests to handers which are Clojure functions. Data formats are managed by coercion and content negotiation. OpenAPI (swagger) is used for self-documenting APIs"}
 
    {:title       "Practicalli ClojureScript"
