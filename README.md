@@ -51,6 +51,12 @@ To create a production build run:
 > The fig:live build will write the generated javascript code in the `/docs/cljs-out/dev-main.js` file.
 
 
+## Running tests
+TODO: add some tests
+- check that the relevant sections are added
+- check a section is returning the right form / structure
+
+
 ### Deploying to Test
 
 Copy the following files and directories to the `/docs` directory:
