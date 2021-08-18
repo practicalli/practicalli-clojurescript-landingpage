@@ -106,8 +106,8 @@
   [:div
    [content/navigation-fixed]
 
-   #_[content/title-banner]
-   [content/title-banner-covid]
+   [content/title-banner]
+   #_[content/title-banner-covid]
 
    [content/level-separator "videos-broadcasts"]
    [content/videos-broadcasts (get @app-state :youtube)]
