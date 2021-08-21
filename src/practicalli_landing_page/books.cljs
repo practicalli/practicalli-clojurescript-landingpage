@@ -14,8 +14,8 @@
     :description " - learn the Clojure language through REPL driven development using Clojure CLI tools (deps.edn). Use a rich set of community tools, including Rebel readline Terminal UI, Portal and Reveal data browsers and tools to manage all aspects of Clojure projects. Practice Clojure by solving challenges with examples of different approaches.  Encode the design and avoid regressions by writing unit tests and specifications for generative testing."}
 
    {:title       "Clojure Web"
-    :url         "https://practical.li/clojure-webapps"
-    :image       "https://raw.githubusercontent.com/practicalli/graphic-design/live/book-covers/practicalli-clojure-webapps-book-banner.png"
+    :url         "https://practical.li/clojure-web-services"
+    :image       "https://raw.githubusercontent.com/practicalli/graphic-design/live/book-covers/practicalli-clojure-web-services-book-banner.png"
     :github-repo "clojure-web-services"
     :description " - build production level server-side web services, micro-services and API's in Clojure.  Using Ring as an abstraction over HTTP with requests and responses as simple Clojure hash-maps. Routing of requests are managed by Compojure or Reitit, passing requests to handers which are Clojure functions. Data formats are managed by coercion and content negotiation. OpenAPI (swagger) is used for self-documenting APIs"}
 
