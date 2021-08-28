@@ -1,5 +1,5 @@
 ^{:watch-dirs   ["test" "src"]
   :css-dirs     ["resources/public/css"]
   :auto-testing true}
-{:main practicalli-landing-page.core
- :output-to "docs/cljs-out/dev-main.js"}
+{:main practicalli.landing-page
+ :output-to "docs/js/landing-page-app.js"}
