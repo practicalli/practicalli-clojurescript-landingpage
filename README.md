@@ -1,4 +1,4 @@
-# practicalli-landing-page
+# Practicalli Landing Page
 
 The website brings together all the content created for the Practicalli series on Functional programming with Clojure.
 
@@ -6,9 +6,8 @@ The website brings together all the content created for the Practicalli series o
 
 This web page was created with ClojureScript, reagent, figwheel-main and Bulma CSS framework.
 
-The project was created with Leiningen build tool and using the figwheel-main template, with reagent option.
+The project was created with Leiningen build tool and using the figwheel-main template, with reagent option.  A Clojure CLI tools configuration has also been added.
 
-`lein new figwheel-main` practicalli-landing-page -- --reagent
 
 ## Development
 
@@ -16,9 +15,9 @@ To get an interactive development environment run:
 
 ### Run via Spacemacs
 
-Open one of the ClojureScript source code files, e.g. `src/practicalli_landing_page/core.cljs`
+Open one of the ClojureScript source code files, e.g. `src/practicalli/landing_page.cljs`
 
-`, '` and select the `cider-jack-in-cljs` option (or use `, s j s`).
+`, m s` to run `sesman-start` and select the `cider-jack-in-cljs` option
 
 Select `figwheel-main` when prompted for build tool
 
@@ -29,11 +28,9 @@ Select `dev` when prompted for the profile
 
 Open a terminal and run the following command to start a REPL
 
-    lein fig:build
+    clojure -A:fig:build
 
-This will auto compile and send all changes to the browser without the
-need to reload. After the compilation process is complete, you will
-get a Browser Connected REPL. An easy way to try it is:
+This will auto compile and send all changes to the browser without the need to reload. After the compilation process is complete, you will get a Browser Connected REPL. An easy way to try it is:
 
     (js/alert "Am I connected?")
 
@@ -41,12 +38,13 @@ and you should see an alert in the browser window.
 
 To clean all compiled files:
 
-    lein clean
+    rm -rf target/public
 
 To create a production build run:
 
-    lein clean
     lein fig:live
+    clojure -M:fig:min
+
 
 > The fig:live build will write the generated javascript code in the `/docs/cljs-out/dev-main.js` file.
 
