@@ -73,6 +73,8 @@
        "Practicalli"]
       [:h3 {:class "subtitle"}
        "Practical approaches to learning Functional Programming with Clojure"]
+      [:h4 {:class "subtitle"}
+       "(-> idea :learn :design :document :code :test :deploy)"]
       [:div {:div "content"}
        "Getting started with Clojure programming via YouTube broadcasts, screencasts and books. Learn how to "
        [:a {:href "https://practicalli.github.io/clojure/clojure-tools/using-clojure-tools.html"}
@@ -80,8 +82,7 @@
        " to create and develop Clojure projects.  Follow guides to install and get started with "
        [:a {:href "https://practicalli.github.io/clojure/clojure-editors/"}
         "Clojure aware editors"]
-       "."]]
-     ]]])
+       "."]]]]])
 
 (defn title-banner-covid
   "Top banner and navigation for the website during covid symptoms"
