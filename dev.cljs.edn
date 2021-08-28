@@ -1,4 +1,4 @@
 ^{:watch-dirs ["test" "src"]
   :css-dirs ["resources/public/css"]
   :auto-testing true}
-{:main practicalli-landing-page.core}
+{:main practicalli.landing-page}

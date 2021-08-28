@@ -7,12 +7,12 @@
 ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(ns practicalli-landing-page.content)
+(ns practicalli.content)
 
 
 
 (defn navigation-fixed
-  []
+  [web-assets]
   [:nav {:class      "navbar is-fixed-top is-success"
          :role       "navigation"
          :aria-label "main navigation"}
@@ -20,11 +20,11 @@
     [:div {:class "navbar-brand"}
      [:a {:class "navbar-item"
           :href  "/"}
-      [:img {:src "images/practicalli-logo.png"}]]
+      [:img {:src (-> web-assets :practicalli :banner)}]]
      [:span {:class       "navbar-burger burger"
              :data-target "navbarPracticalli"}
       ;; Empty spans needed for navbar burger
-      [:span][:span][:span]]]
+      [:span] [:span] [:span]]]
     [:div {:id    "navbarPracticalli"
            :class "navbar-menu"}
      [:div {:class "navbar-start"}
@@ -45,7 +45,9 @@
            :href  "#support"} "Support"]
 
       [:a {:class "navbar-item"
-           :href  "#resources"} "Resources"]
+           :href  "#resources"} "Resources"]]
+
+     [:div {:class "navbar-end"}
 
       [:span {:class "navbar-item"}
        [:a {:class  "button is-inverted"
@@ -59,13 +61,13 @@
 
 (defn title-banner
   "Top banner and navigation for the website"
-  []
+  [web-assets]
   [:section {:class "section"}
    [:div {:class "container"}
     [:div {:class "columns is-vcentered"}
 
      [:div {:class "column is-2 is-offset-1"}
-      [:img {:src   "images/practicalli-logo.png"
+      [:img {:src   (-> web-assets :practicalli :logo)
              :width "160px"}]]
 
      [:div {:class "column"}
@@ -236,18 +238,17 @@
     [:div {:class "columns is-vcentered"}
 
      [:div {:class "column"}
-      [:a {:href   (get-in youtube-links [:channel :practicalli])
+      [:a {:href   (-> youtube-links :channel :practicalli :url)
            :target "_blank"}
        [:h2 {:class "title is-2 has-text-centered"}
         "Live Broadcasts"]
        [:h6 {:class "title is-6 has-text-centered"}
         "Live coding broadcasts to learn together"]
        [:figure {:class "image"}
-        [:img {:src "images/practicalli-banner-icons-full-horizontal.png"}]]]]
+        [:img {:src (-> youtube-links :channel :practicalli :banner)}]]]]
 
      [:div {:class "column"}
-      (youtube-playlists-list youtube-links)
-      ]]]])
+      (youtube-playlists-list youtube-links)]]]])
 
 
 

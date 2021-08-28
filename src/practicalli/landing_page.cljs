@@ -3,39 +3,46 @@
 ;;
 ;; A ClojureScript single page app with reagent
 ;; Created with Leinigen figwheel-main template
-;; https://practicalli.github.io
+;; https://practical.li/
 ;;
 ;; Author(s): John Stevenson
 ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 
-(ns ^:figwheel-hooks practicalli-landing-page.core
+(ns ^:figwheel-hooks practicalli.landing-page
   (:require
    [goog.dom :as gdom]
    [reagent.core :as reagent :refer [atom]]
+   [reagent.dom :as rdom]
 
-   [practicalli-landing-page.content :as content]
-   [practicalli-landing-page.books   :as books]))
+   ;; Practicalli
+   [practicalli.books   :as books]
+   [practicalli.content :as content]))
+
 
 ;; simple debug statement for each build
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(println (js/Date.) "Reloading: src/practicalli_landing_page/core.cljs")
+(println (js/Date.) "Reloading: src/practicalli_landing_page.cljs")
+
 
 
 ;; Application State
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; define your app data so that it doesn't get over-written on reload
-(defonce app-state
-  (atom {:youtube
 
+(defonce app-state
+  (atom {:web-assets
+         {:practicalli {:logo "https://raw.githubusercontent.com/practicalli/graphic-design/live/practicalli-logo.png"
+                        :banner "https://raw.githubusercontent.com/practicalli/graphic-design/live/practicalli-logo-name.png"}}
+
+         :youtube
          {:channel
-          {:practicalli
-           "http://youtube.com/c/+practicalli"
-           :jr0cket
-           "http://yt.vu/+jr0cket"}
+          {:practicalli {:url "http://youtube.com/c/+practicalli"
+                         :banner "https://raw.githubusercontent.com/practicalli/graphic-design/live/practicalli-banner-icons-full-horizontal.png"}
+           :jr0cket "http://yt.vu/+jr0cket"}
 
           :playlists
           {:jr0cket-study-group
@@ -80,7 +87,7 @@
           :kickstarter             {:url  "/"
                                     :logo "images/kickstarter-logo.jpeg"}
           :clojurists-together     {:url  "https://www.clojuriststogether.org/"
-                                    :logo "images/clojurists-together-banner.png"
+                                    :logo "https://raw.githubusercontent.com/practicalli/graphic-design/live/banners/clojurists-together-banner.png"
                                     :reports
                                     {:year-2020 {:q2 {:update1 "https://github.com/practicalli/clojurists-together-journal/blob/live/2020-May-01-15.md"
                                                       :update2 "https://github.com/practicalli/clojurists-together-journal/blob/live/2020-May-16-31.md"
@@ -96,6 +103,8 @@
                                                       :update6 "https://github.com/practicalli/clojurists-together-journal/blob/live/2020-November-01-15.md"}}} }}}))
 
 
+
+
 ;; Website structure
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
@@ -104,28 +113,28 @@
   "The layout of components on the main page."
   []
   [:div
-   [content/navigation-fixed]
+   [content/navigation-fixed (@app-state :web-assets)]
 
-   [content/title-banner]
+   [content/title-banner (@app-state :web-assets)]
    #_[content/title-banner-covid]
 
    [content/level-separator "videos-broadcasts"]
-   [content/videos-broadcasts (get @app-state :youtube)]
+   [content/videos-broadcasts (@app-state :youtube)]
 
    [content/level-separator "books"]
    [books/book-list books/practicalli-books]
 
    [content/level-separator "contact"]
-   [content/contact (get @app-state :contact-channels)]
+   [content/contact (@app-state :contact-channels)]
 
    [content/level-separator "support"]
-   [content/support-practicalli (get @app-state :support-channels)]
+   [content/support-practicalli (@app-state :support-channels)]
 
-   [content/sponsorship (get-in @app-state [:support-channels :clojurists-together])]
+   [content/sponsorship (-> @app-state :support-channels :clojurists-together)]
 
    [content/level-separator "resources"]
-   [content/resources]
-   ])
+   [content/resources]])
+
 
 
 
@@ -135,10 +144,8 @@
 (defn get-app-element []
   (gdom/getElement "app"))
 
-
 (defn mount [el]
-  (reagent/render-component [main-page] el))
-
+  (rdom/render [main-page] el))
 
 (defn mount-app-element []
   (when-let [el (get-app-element)]
@@ -154,20 +161,4 @@
   ;; optionally touch your app-state to force rerendering depending on
   ;; your application
   ;; (swap! app-state update-in [:__figwheel_counter] inc)
-  )
-
-
-;; REPL Driven Development
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-#_(reset! app-state
-          {:text "Hello world!"
-           :youtube
-           {:channels
-            {:practicalli
-             "https://www.youtube.com/c/+practicalli"
-             :jr0cket
-             "http://yt.vu/+jr0cket"}
-            :playlists
-            {:jr0cket-study-group
-             "https://www.youtube.com/watch?v=MZcuL4lRw5E&list=PLy9I_IfUBzKJSgctCJaRYcnF6kZdiZ5ku"}}})
+)

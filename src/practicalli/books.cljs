@@ -1,4 +1,5 @@
-(ns practicalli-landing-page.books)
+(ns practicalli.books)
+
 
 (def practicalli-books
   [{:title       "Practicalli Spacemacs"
