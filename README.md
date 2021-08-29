@@ -66,7 +66,16 @@ Copy the following files and directories to the `/docs` directory:
 Committing these files in the `/docs` directory will update [the test environment for this project](https://practicalli.github.io/practicalli-landing-page/), allowing deployed changes to be viewed before pushing to live.
 
 
-### Deploy to Live
+## Automated Deploy via GitHub Actions
+
+`.github/workflows/deploy.yml` defines a GitHub Actions workflow to deploy on any commit to the `live` branch, including pull requests merged to that branch.
+
+`clojure -M:fig:live` command is called to compile the ClojureScript code into an advanced compiled JavaScript file and written to the `docs` directory.
+
+The GitHub Action deploys the contents of `docs` directory to the root of the `gh-pages` branch
+
+
+### Manual Deploy to Live
 
 Clone the `practicalli.github.io` repository
 
