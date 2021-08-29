@@ -42,9 +42,7 @@ To clean all compiled files:
 
 To create a production build run:
 
-    lein fig:live
     clojure -M:fig:min
-
 
 > The fig:live build will write the generated javascript code in the `/docs/cljs-out/dev-main.js` file.
 
