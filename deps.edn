@@ -20,5 +20,8 @@
   :min
   {:main-opts ["-m" "figwheel.main" "-O" "advanced" "-bo" "dev"]}
 
+  :live
+  {:main-opts ["-m" "figwheel.main" "-O" "advanced" "-bo" "live"]}
+
   :test
   {:main-opts ["-m" "figwheel.main" "-co" "test.cljs.edn" "-m" "practicalli.test-runner"]}}}
