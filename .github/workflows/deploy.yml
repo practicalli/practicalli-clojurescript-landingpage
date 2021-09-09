@@ -27,7 +27,7 @@ jobs:
           cli: 1.10.3.943
 
       - name: Build Blog site
-        run: clojure -M:fig:live
+        run: clojure -M:env/figwheel:build/live
 
       - name: Publish to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.4
