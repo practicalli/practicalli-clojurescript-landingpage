@@ -28,7 +28,7 @@ Select `dev` when prompted for the profile
 
 Open a terminal and run the following command to start a REPL
 
-    clojure -A:fig:build
+    clojure -M:env/figwheel:build/dev
 
 This will auto compile and send all changes to the browser without the need to reload. After the compilation process is complete, you will get a Browser Connected REPL. An easy way to try it is:
 
@@ -40,11 +40,11 @@ To clean all compiled files:
 
     rm -rf target/public
 
-To create a production build run:
+Use the `:build/minify` for advanced compilation and a minified JavaScript file:
 
-    clojure -M:fig:min
+    clojure -M:env/figwheel:build/minify
 
-> The fig:live build will write the generated javascript code in the `/docs/cljs-out/dev-main.js` file.
+> The :env/fig:build/live build will write the generated javascript code in the `/docs/js/practicalli-landing-page.js` file.
 
 
 ## Running tests
@@ -55,38 +55,26 @@ TODO: add some tests
 
 ### Deploying to Test
 
-Copy the following files and directories to the `/docs` directory:
+Copy any changes in the following files and directories to the `/docs` directory:
 
 - `resources/public/index.html`
 - `resources/public/css`
 - `resources/public/images`
 
-Committing these files in the `/docs` directory will update [the test environment for this project](https://practicalli.github.io/practicalli-landing-page/), allowing deployed changes to be viewed before pushing to live.
+Committing these files in the `/docs` directory will update [the test environment for this project](https://practicalli.github.io/practicalli.github.io/), allowing deployed changes to be viewed before pushing to live.
 
 
 ## Automated Deploy via GitHub Actions
 
 `.github/workflows/deploy.yml` defines a GitHub Actions workflow to deploy on any commit to the `live` branch, including pull requests merged to that branch.
 
-`clojure -M:fig:live` command is called to compile the ClojureScript code into an advanced compiled JavaScript file and written to the `docs` directory.
+`clojure -M:env/figwheel:build/live` command is called to compile the ClojureScript code into an advanced compiled JavaScript file and written to the `docs` directory.
 
-The GitHub Action deploys the contents of `docs` directory to the root of the `gh-pages` branch
+The GitHub Action deploys the contents of `docs` directory to the root of the `gh-pages` branch.
 
-
-### Manual Deploy to Live
-
-Clone the `practicalli.github.io` repository
-
-`git clone git@github.com:practicalli/practicalli.github.io.git`
-
-Copy all files and directories from the `/docs` directory to the root of that repository.
-
-`cp -ruv ../practicalli-landing-page/docs/* .`
-
-> Note: option r for recursive, u for update so only newer files are copied and v for verbose to show what files are copied.
 
 ## License
 
-Copyright © 2019 Practicalli / jr0cket
+Copyright © 2019 Practicalli
 
 Distributed under the Creative Commons Attribution Share-Alike 4.0 International
