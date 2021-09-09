@@ -8,20 +8,20 @@
 
  :aliases
  {
-  :fig
+  :env/figwheel
   {:extra-deps
    {com.bhauman/rebel-readline-cljs {:mvn/version "0.1.4"}
     com.bhauman/figwheel-main {:mvn/version "0.2.11"}}
    :extra-paths ["target" "test"]}
 
-  :build
+  :build/dev
   {:main-opts ["-m" "figwheel.main" "-b" "dev" "-r"]}
 
-  :min
+  :build/minify
   {:main-opts ["-m" "figwheel.main" "-O" "advanced" "-bo" "dev"]}
 
-  :live
+  :build/live
   {:main-opts ["-m" "figwheel.main" "-O" "advanced" "-bo" "live"]}
 
-  :test
+  :test/runner
   {:main-opts ["-m" "figwheel.main" "-co" "test.cljs.edn" "-m" "practicalli.test-runner"]}}}
