@@ -52,7 +52,7 @@
       [:span {:class "navbar-item"}
        [:a {:class  "button is-inverted"
             :target "_blank"
-            :href   "https://github.com/practicalli/practicalli-landing-page"}
+            :href   (-> web-assets :practicalli :code-repository)}
         [:span {:class "icon"}
          [:i {:class "fab fa-github"}]]
         [:span "Issues/PRs"]]]]]]])
