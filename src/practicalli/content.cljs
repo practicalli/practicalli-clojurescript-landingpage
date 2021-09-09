@@ -49,6 +49,10 @@
 
      [:div {:class "navbar-end"}
 
+      [:a {:class "navbar-item has-text-weight-bold"
+           :targe "_blank"
+           :href  (-> web-assets :practicalli :status)} "Status"]
+
       [:span {:class "navbar-item"}
        [:a {:class  "button is-inverted"
             :target "_blank"
