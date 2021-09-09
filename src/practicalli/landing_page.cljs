@@ -36,7 +36,10 @@
 (defonce app-state
   (atom {:web-assets
          {:practicalli {:logo "https://raw.githubusercontent.com/practicalli/graphic-design/live/practicalli-logo.png"
-                        :banner "https://raw.githubusercontent.com/practicalli/graphic-design/live/practicalli-logo-name.png"}}
+                        :banner "https://raw.githubusercontent.com/practicalli/graphic-design/live/practicalli-logo-name.png"
+                        :website "https://practical.li"
+                        :status "https://status.practical.li/"
+                        :code-repository "https://github.com/practicalli/practicalli.github.io"}}
 
          :youtube
          {:channel
