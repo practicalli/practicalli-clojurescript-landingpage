@@ -2,6 +2,9 @@ name: Deploy Landing Page
 
 on:
   push:
+    paths-ignore:
+      - 'README.md'
+      - 'CHANGELOG.md'
     branches:
     - live
 
