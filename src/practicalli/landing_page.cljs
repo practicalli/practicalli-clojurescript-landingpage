@@ -103,7 +103,7 @@
                                                       :update3 "https://github.com/practicalli/clojurists-together-journal/blob/live/2020-September-16-30.md"
                                                       :update4 "https://github.com/practicalli/clojurists-together-journal/blob/live/2020-October-01-15.md"
                                                       :update5 "https://github.com/practicalli/clojurists-together-journal/blob/live/2020-October-16-31.md"
-                                                      :update6 "https://github.com/practicalli/clojurists-together-journal/blob/live/2020-November-01-15.md"}}} }}}))
+                                                      :update6 "https://github.com/practicalli/clojurists-together-journal/blob/live/2020-November-01-15.md"}}}}}}))
 
 
 
