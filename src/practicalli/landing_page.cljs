@@ -116,7 +116,7 @@
   "The layout of components on the main page."
   []
   [:div
-   [content/navigation-fixed (@app-state :web-assets)]
+   [content/navigation (@app-state :web-assets)]
 
    [content/title-banner (@app-state :web-assets)]
    #_[content/title-banner-covid]
