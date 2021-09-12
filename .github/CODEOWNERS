@@ -1,0 +1,7 @@
+# Codeowners
+# Define automatic PR assignment rules
+# automatically added as a reviewer to all pull requests (except drafts)
+# https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/about-code-owners
+
+# Default owners for everything in the repository
+*       @practicalli-john
