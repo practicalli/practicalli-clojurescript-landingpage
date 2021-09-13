@@ -11,7 +11,13 @@ The project was created with Leiningen build tool and using the figwheel-main te
 
 ## Development
 
-To get an interactive development environment run:
+To get an interactive development environment run the following command in a terminal:
+
+```shell
+clojure -M:env/figwheel:build/dev
+```
+
+
 
 ### Run via Spacemacs
 
@@ -19,9 +25,7 @@ Open one of the ClojureScript source code files, e.g. `src/practicalli/landing_p
 
 `, m s` to run `sesman-start` and select the `cider-jack-in-cljs` option
 
-Select `figwheel-main` when prompted for build tool
-
-Select `dev` when prompted for the profile
+The `.dir-locals.el` configuration file sets the build tool to be `figwheel-main` and the build profile to be `dev` (loading the `dev.cljs.edn` build file)
 
 
 ### Run via the command line
@@ -70,7 +74,7 @@ Committing these files in the `/docs` directory will update [the test environmen
 
 `clojure -M:env/figwheel:build/live` command is called to compile the ClojureScript code into an advanced compiled JavaScript file and written to the `docs` directory.
 
-The GitHub Action deploys the contents of `docs` directory to the root of the `gh-pages` branch.
+The GitHub Action deploys the contents of `docs` directory to the root of the `gh-pages` branch.  The GitHub repository pages section is configured to serve content from the root of the `gh-pages` branch, enforcing https.
 
 
 ## License
