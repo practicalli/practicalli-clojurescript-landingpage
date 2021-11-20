@@ -12,7 +12,7 @@
                   :banner "https://raw.githubusercontent.com/practicalli/graphic-design/live/practicalli-logo-name.png"
                   :website "https://practical.li"
                   :status "https://status.practical.li/"
-                  :code-repository "https://github.com/practicalli/practicalli.github.io"}
+                  :repository "https://github.com/practicalli/practicalli.github.io"}
 
    :youtube
    {:channel

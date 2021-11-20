@@ -12,7 +12,7 @@
 
 
 (defn navigation
-  []
+  [web-assets]
   [:nav {:class      "navbar is-fixed-top is-success"
          :role       "navigation"
          :aria-label "main navigation"}
@@ -21,7 +21,7 @@
     [:div {:class "navbar-brand"}
      [:a {:class "navbar-item"
           :href  "/"}
-      [:img {:src "images/practicalli-logo.png"}]]
+      [:img {:src (web-assets :logo)}]]
      [:span {:class       "navbar-burger burger"
              :data-target "navbarPracticalli"}
       ;; Empty spans needed for navbar burger
@@ -51,13 +51,13 @@
      [:div {:class "navbar-end"}
 
       [:a {:class "navbar-item has-text-weight-bold"
-           :href  "https://status.practical.li/"
+           :href  (web-assets :status)
            :target "_blank"} "Status"]
 
       [:span {:class "navbar-item"}
        [:a {:class  "button is-inverted"
             :target "_blank"
-            :href   "https://github.com/practicalli/practicalli-landing-page"}
+            :href   (web-assets :repository)}
         [:span {:class "icon"}
          [:i {:class "fab fa-github"}]]
         [:span "Issues/PRs"]]]]]]])

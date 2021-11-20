@@ -35,7 +35,7 @@
   "The layout of components on the main page."
   []
   [:div
-   [content/navigation data/web-assets]
+   [content/navigation (data/web-assets :landing-page)]
 
    [content/title-banner data/web-assets]
    #_[content/title-banner-covid]
