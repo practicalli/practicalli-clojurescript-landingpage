@@ -26,16 +26,16 @@
     :github-repo "clojurescript"
     :description " - build single page apps (SPA's), dynamic UI's and mobile apps with responsive design. Figwheel-main provides instant feedback during development, pushing changes to the browser as they are saved. Reagent library is an interface to React, driving UI components (functions) with immutable Clojure data structures."}
 
-   #_{:title       "Practicalli Into Clojure Data Science"
-    :url         "https://practical.li/into-clojure-data-science"
+   {:title       "Practicalli Clojure Data Science"
+    :url         "https://practical.li/clojure-data-science"
     :image       "https://raw.githubusercontent.com/practicalli/graphic-design/live/book-covers/practicalli-clojure-data-science-book-banner-alpha.png"
-    :github-repo "into-clojure-data-science"
+    :github-repo "clojure-data-science"
     :description " - discover Clojure tools and techniques when working with data science related projects. Ingest data from various sources into Clojure data structures. Transform Clojure data structures using fast and efficient community libraries. Visualise data to communicate meaning from data sets"}
 
-   #_{:title       "Practicalli Clojure with Kafka"
+   {:title       "Practicalli Clojure with Kafka"
     :url         "https://practical.li/clojure-kafka"
     :image       "https://raw.githubusercontent.com/practicalli/graphic-design/live/book-covers/practicalli-clojure-kafka-book-banner-alpha.png"
-    :github-repo "clojure-kafka-content"
+    :github-repo "clojure-kafka"
     :description " - use Clojure with Apache Kafka to build immutable event stream services. Define specifications to validate data consumed and produced to Kafka topics. Use Jackdaw library to control Kafka and write Kafka Stream applications"}
 
    #_{:title       ""
