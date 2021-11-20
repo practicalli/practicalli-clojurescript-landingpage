@@ -5,16 +5,16 @@
   [{:title       "Practicalli Spacemacs"
     :url         "https://practical.li/spacemacs"
     :image       "https://raw.githubusercontent.com/practicalli/graphic-design/live/book-covers/practicalli-spacemacs-book-banner.png"
-    :github-repo "spacemacs-content"
+    :github-repo "spacemacs"
     :description " - powerful editing with Emacs and Vim multi-modal editing, with a mnemonic menu that simplifies the learning curve.  Install a full Clojure development experience with two Git commands."}
 
    {:title       "Practicalli Clojure"
     :url         "https://practical.li/clojure"
     :image       "https://raw.githubusercontent.com/practicalli/graphic-design/live/book-covers/practicalli-clojure-book-banner.png"
-    :github-repo "clojure-content"
+    :github-repo "clojure"
     :description " - learn the Clojure language through REPL driven development using Clojure CLI tools (deps.edn). Use a rich set of community tools, including Rebel readline Terminal UI, Portal and Reveal data browsers and tools to manage all aspects of Clojure projects. Practice Clojure by solving challenges with examples of different approaches.  Encode the design and avoid regressions by writing unit tests and specifications for generative testing."}
 
-   {:title       "Clojure Web"
+   {:title       "Clojure Web Services"
     :url         "https://practical.li/clojure-web-services"
     :image       "https://raw.githubusercontent.com/practicalli/graphic-design/live/book-covers/practicalli-clojure-web-services-book-banner.png"
     :github-repo "clojure-web-services"
@@ -23,7 +23,7 @@
    {:title       "Practicalli ClojureScript"
     :url         "https://practical.li/clojurescript"
     :image       "https://raw.githubusercontent.com/practicalli/graphic-design/live/book-covers/practicalli-clojurescript-book-banner-alpha.png"
-    :github-repo "clojurescript-content"
+    :github-repo "clojurescript"
     :description " - build single page apps (SPA's), dynamic UI's and mobile apps with responsive design. Figwheel-main provides instant feedback during development, pushing changes to the browser as they are saved. Reagent library is an interface to React, driving UI components (functions) with immutable Clojure data structures."}
 
    #_{:title       "Practicalli Into Clojure Data Science"
