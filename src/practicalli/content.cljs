@@ -85,7 +85,7 @@
        "(-> idea :learn :design :document :code :test :deploy)"]
       [:div {:div "content"}
        "Getting started with Clojure programming via YouTube broadcasts, screencasts and books. Learn how to "
-       [:a {:href "https://practicalli.github.io/clojure/clojure-tools/using-clojure-tools.html"}
+       [:a {:href "https://practicalli.github.io/clojure/clojure-cli/"}
         "use Clojure CLI tools"]
        " to create and develop Clojure projects.  Follow guides to install and get started with "
        [:a {:href "https://practicalli.github.io/clojure/clojure-editors/"}
