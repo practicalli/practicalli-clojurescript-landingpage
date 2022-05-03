@@ -16,7 +16,7 @@
 
    :youtube
    {:channel
-    {:practicalli {:url "http://youtube.com/c/+practicalli"
+    {:practicalli {:url "https://www.youtube.com/practicalli"
                    :banner "https://raw.githubusercontent.com/practicalli/graphic-design/live/practicalli-banner-icons-full-horizontal.png"}
      :jr0cket "http://yt.vu/+jr0cket"}
 
