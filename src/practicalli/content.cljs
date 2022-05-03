@@ -391,7 +391,7 @@
                :target "_blank"} "Clojure Cookbook"]]]
         [:tr
          [:th
-          [:a {:href "http://practicalli.github.io/" :target "_blank"} "Practicalli Clojure"]]]
+          [:a {:href "http://practical.li/clojure" :target "_blank"} "Practicalli Clojure"]]]
         [:tr
          [:th
           [:a {:href "http://funcool.github.io/clojurescript-unraveled/" :target "_blank"} "ClojureScript Unraveled"]]]
