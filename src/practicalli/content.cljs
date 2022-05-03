@@ -73,7 +73,7 @@
     [:div {:class "columns is-vcentered"}
 
      [:div {:class "column is-2 is-offset-1"}
-      [:img {:src   (-> web-assets :practicalli :logo)
+      [:img {:src   (-> web-assets :landing-page :logo)
              :width "160px"}]]
 
      [:div {:class "column"}
