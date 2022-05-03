@@ -52,6 +52,7 @@
    [content/level-separator "support"]
    [content/support-practicalli (data/web-assets :support-channels)]
 
+   [content/level-separator "resources"]
    [content/sponsorship (-> data/web-assets :support-channels :clojurists-together)]
 
    [content/level-separator "resources"]
