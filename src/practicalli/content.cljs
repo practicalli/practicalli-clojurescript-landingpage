@@ -408,20 +408,21 @@
        [:tbody
         [:tr
          [:th
-          [:a {:href "https://www.youtube.com/user/ClojureTV" :target "_blank"} "Clojure TV"]]
-         [:td "conference talks"]]
-        [:tr
-         [:th
-          [:a {:href "https://www.youtube.com/watch?v=9A9qsaZZefw&list=PLAC43CFB134E85266" :target "_blank"} "Clojure Language"]]
+          [:a {:href "https://www.youtube.com/watch?v=9A9qsaZZefw&list=PLAC43CFB134E85266" :target "_blank"} "Clojure Language Overview"]]
          [:td "describing language concepts"]]
         [:tr
          [:th
-          [:a {:href "https://www.youtube.com/playlist?list=PLpr9V-R8ZxiDjyU7cQYWOEFBDR1t7t0wv" :target "_blank"} "Practicalli study group"]]
-         [:td "weekly practical lessons"]]
+          [:a {:href "https://www.youtube.com/playlist?list=PLpr9V-R8ZxiDjyU7cQYWOEFBDR1t7t0wv" :target "_blank"} "Practising Clojure"]]
+         [:td "100+ hours of Clojure coding"]]
         [:tr
          [:th
           [:a {:href "http://www.parens-of-the-dead.com/" :target "_blank"} "Parens of the dead"]]
-         [:td "a card game in Clojure"]]]]]]]])
+         [:td "REPL driven development of a card game"]]
+        [:tr
+         [:th
+          [:a {:href "https://www.youtube.com/user/ClojureTV" :target "_blank"} "Clojure TV"]]
+         [:td "conference talks"]]
+        ]]]]]])
 
 
 
