@@ -394,6 +394,9 @@
           [:a {:href "http://practical.li/clojure" :target "_blank"} "Practicalli Clojure"]]]
         [:tr
          [:th
+          [:a {:href "http://practical.li/clojure-web-services" :target "_blank"} "Practicalli Clojure Web Services"]]]
+        [:tr
+         [:th
           [:a {:href "http://funcool.github.io/clojurescript-unraveled/" :target "_blank"} "ClojureScript Unraveled"]]]
         [:tr
          [:th
