@@ -132,10 +132,10 @@
    [:div {:class "box"}
 
     [:div {:class "content"}
-     [:a {:href   (:url sponsor)
+     [:a {:href   (-> sponsor :reports :repository)
           :target "_blank"}
       [:h2 {:class "title has-text-centered"}
-       "Sponsored by Clojurists Together - May-November 2020"]]]
+       "Clojurists Together Sponsorship Journal"]]]
 
     [:div {:class "columns is-vcentered"}
      [:div {:class "column"}
@@ -144,47 +144,70 @@
        [:figure {:class "image"}
         [:img {:src (:logo sponsor)}]]]]
 
+     #_[:div {:class "column"}
+      [:div {:class "content"}
+       [:ul
+        [:li [:a {:href   (-> sponsor :reports :year-2022 :q2 :update1)
+                  :target "_blank"}
+              "Update: May 01-15"]]
+        [:li [:a {:href   (-> sponsor :reports :year-2022 :q2 :update2)
+                  :target "_blank"}
+              "Update: May 16-30"]]
+        [:li [:a {:href   (-> sponsor :reports :year-2022 :q2 :update3)
+                  :target "_blank"}
+              "Update: June 01-15"]]
+        [:li [:a {:href   (-> sponsor :reports :year-2022 :q2 :update4)
+                  :target "_blank"}
+              "Update: June 16-30"]]
+        [:li [:a {:href   (-> sponsor :reports :year-2022 :q2 :update5)
+                  :target "_blank"}
+              "Update: July 01-15"]]
+        [:li [:a {:href   (-> sponsor :reports :year-2022 :q2 :update6)
+                  :target "_blank"}
+              "Update: July 16-30"]]]
+       ]]
+
      [:div {:class "column"}
       [:div {:class "content"}
        [:ul
-        [:li [:a {:href   (get-in sponsor [:reports :year-2020 :q2 :update1])
+        [:li [:a {:href   (-> sponsor :reports :year-2020 :q2 :update1)
                   :target "_blank"}
               "Update: May 01-15"]]
-        [:li [:a {:href   (get-in sponsor [:reports :year-2020 :q2 :update2])
+        [:li [:a {:href   (-> sponsor :reports :year-2020 :q2 :update2)
                   :target "_blank"}
               "Update: May 16-30"]]
-        [:li [:a {:href   (get-in sponsor [:reports :year-2020 :q2 :update3])
+        [:li [:a {:href   (-> sponsor :reports :year-2020 :q2 :update3)
                   :target "_blank"}
               "Update: June 01-15"]]
-        [:li [:a {:href   (get-in sponsor [:reports :year-2020 :q2 :update4])
+        [:li [:a {:href   (-> sponsor :reports :year-2020 :q2 :update4)
                   :target "_blank"}
               "Update: June 16-30"]]
-        [:li [:a {:href   (get-in sponsor [:reports :year-2020 :q2 :update5])
+        [:li [:a {:href   (-> sponsor :reports :year-2020 :q2 :update5)
                   :target "_blank"}
               "Update: July 01-15"]]
-        [:li [:a {:href   (get-in sponsor [:reports :year-2020 :q2 :update6])
+        [:li [:a {:href   (-> sponsor :reports :year-2020 :q2 :update6)
                   :target "_blank"}
               "Update: July 16-30"]]]
        ]]
      [:div {:class "column"}
       [:div {:class "content"}
        [:ul
-        [:li [:a {:href   (get-in sponsor [:reports :year-2020 :q3 :update1])
+        [:li [:a {:href   (-> sponsor :reports :year-2020 :q3 :update1)
                   :target "_blank"}
               "Update: August 16-31"]]
-        [:li [:a {:href   (get-in sponsor [:reports :year-2020 :q3 :update2])
+        [:li [:a {:href   (-> sponsor :reports :year-2020 :q3 :update2)
                   :target "_blank"}
               "Update: September 01-15"]]
-        [:li [:a {:href   (get-in sponsor [:reports :year-2020 :q3 :update3])
+        [:li [:a {:href   (-> sponsor :reports :year-2020 :q3 :update3)
                   :target "_blank"}
               "Update: September 16-30"]]
-        [:li [:a {:href   (get-in sponsor [:reports :year-2020 :q3 :update4])
+        [:li [:a {:href   (-> sponsor :reports :year-2020 :q3 :update4)
                   :target "_blank"}
               "Update: October 01-15"]]
-        [:li [:a {:href   (get-in sponsor [:reports :year-2020 :q3 :update5])
+        [:li [:a {:href   (-> sponsor :reports :year-2020 :q3 :update5)
                   :target "_blank"}
               "Update: October 15-31"]]
-        [:li [:a {:href   (get-in sponsor [:reports :year-2020 :q3 :update6])
+        [:li [:a {:href   (-> sponsor :reports :year-2020 :q3 :update6)
                   :target "_blank"}
               "Update: November 01-15"]]]
        ]]]]])

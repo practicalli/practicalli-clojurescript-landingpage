@@ -64,7 +64,9 @@
     :clojurists-together     {:url  "https://www.clojuriststogether.org/"
                               :logo "https://raw.githubusercontent.com/practicalli/graphic-design/live/banners/clojurists-together-banner.png"
                               :reports
-                              {:year-2020 {:q2 {:update1 "https://github.com/practicalli/clojurists-together-journal/blob/live/2020-May-01-15.md"
+                              {:repository "https://github.com/practicalli/clojurists-together-journal"
+                               :year-2022 {}
+                               :year-2020 {:q2 {:update1 "https://github.com/practicalli/clojurists-together-journal/blob/live/2020-May-01-15.md"
                                                 :update2 "https://github.com/practicalli/clojurists-together-journal/blob/live/2020-May-16-31.md"
                                                 :update3 "https://github.com/practicalli/clojurists-together-journal/blob/live/2020-June-01-15.md"
                                                 :update4 "https://github.com/practicalli/clojurists-together-journal/blob/live/2020-June-16-30.md"
