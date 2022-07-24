@@ -14,9 +14,14 @@ The project was created with Leiningen build tool and using the figwheel-main te
 To get an interactive development environment run the following command in a terminal:
 
 ```shell
-clojure -M:env/figwheel:build/dev
+bin/repl
 ```
 
+This script runs the following Clojure command, which can be used if aliases are added or changed
+
+```shell
+clojure -M:env/figwheel:build/dev
+```
 
 
 ### Run via Spacemacs
@@ -28,7 +33,7 @@ Open one of the ClojureScript source code files, e.g. `src/practicalli/landing_p
 The `.dir-locals.el` configuration file sets the build tool to be `figwheel-main` and the build profile to be `dev` (loading the `dev.cljs.edn` build file)
 
 
-### Run via the command line
+### Clojure CLI
 
 Open a terminal and run the following command to start a REPL
 
@@ -52,6 +57,7 @@ Use the `:build/minify` for advanced compilation and a minified JavaScript file:
 
 
 ## Running tests
+
 TODO: add some tests
 - check that the relevant sections are added
 - check a section is returning the right form / structure
