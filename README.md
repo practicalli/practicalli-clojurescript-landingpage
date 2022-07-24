@@ -79,6 +79,6 @@ The GitHub Action deploys the contents of `docs` directory to the root of the `g
 
 ## License
 
-Copyright © 2019 Practicalli
+Copyright © 2022 Practicalli
 
 Distributed under the Creative Commons Attribution Share-Alike 4.0 International
