@@ -8,6 +8,12 @@
     :github-repo "spacemacs"
     :description " - powerful editing with Emacs and Vim multi-modal editing, with a mnemonic menu that simplifies the learning curve.  Install a full Clojure development experience with two Git commands."}
 
+   {:title       "Practicalli Neovim"
+    :url         "https://practical.li/neovim"
+    :image       "https://raw.githubusercontent.com/practicalli/graphic-design/live/book-covers/practicalli-neovim-book-banner.png"
+    :github-repo "neovim"
+    :description " - Neovim for effective Clojure development with Conjure and Clojure LSP (nvim-treesitter). With a mnemonic menu to simplify the learning curve."}
+
    {:title       "Practicalli Clojure"
     :url         "https://practical.li/clojure"
     :image       "https://raw.githubusercontent.com/practicalli/graphic-design/live/book-covers/practicalli-clojure-book-banner.png"
