@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- documentation describing purpose of Bulma classes in resources/public/index.html
+
 ### Changed
 - update Bulma to version 0.9.4
 
