@@ -13,7 +13,7 @@
 
 (defn navigation
   [web-assets]
-  [:nav {:class      "navbar is-fixed-top is-success"
+  [:nav {:class      "navbar is-fixed-top is-info"
          :role       "navigation"
          :aria-label "main navigation"}
    ;; Layout menu with margins to match all other content
