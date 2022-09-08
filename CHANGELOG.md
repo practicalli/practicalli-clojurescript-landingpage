@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+- update Bulma to version 0.9.4
+
+
 ## [2.0.0] - 2021-09-12
 ### Added
 - GitHub Actions to build and deploy site to GitHub pages
