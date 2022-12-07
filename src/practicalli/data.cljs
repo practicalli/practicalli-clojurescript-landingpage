@@ -8,8 +8,8 @@
 ;; define your app data so that it doesn't get over-written on reload
 
 (def web-assets
-  {:landing-page {:logo "https://raw.githubusercontent.com/practicalli/graphic-design/live/practicalli-logo.png"
-                  :banner "https://raw.githubusercontent.com/practicalli/graphic-design/live/practicalli-logo-name.png"
+  {:landing-page {:logo "https://raw.githubusercontent.com/practicalli/graphic-design/live/logos/practicalli-logo.png"
+                  :banner "https://raw.githubusercontent.com/practicalli/graphic-design/live/banners/practicalli-logo.png"
                   :website "https://practical.li"
                   :status "https://status.practical.li/"
                   :repository "https://github.com/practicalli/practicalli.github.io"}
@@ -41,24 +41,24 @@
    :contact-channels
    {:slack   {:clojurians  "https://clojurians.slack.com/"
               :practicalli {:url  "https://clojurians.slack.com/messages/practicalli"
-                            :logo "https://raw.githubusercontent.com/practicalli/graphic-design/live/practicalli-slack-channel.png"}
+                            :logo "https://raw.githubusercontent.com/practicalli/graphic-design/live/buttons/practicalli-slack-channel-button.png"}
               :spacemacs   "https://clojurians.zulipchat.com/#narrow/stream/spacemacs"}
     :zulip   {:clojurians  "https://clojurians.zulipchat.com/"
               :practicalli {:url  "https://clojurians.zulipchat.com/#narrow/stream/practicalli"
-                            :logo "https://raw.githubusercontent.com/practicalli/graphic-design/live/practicalli-zulip-channel.png"}
+                            :logo "https://raw.githubusercontent.com/practicalli/graphic-design/live/buttons/practicalli-zulip-channel-button.png"}
               :events      "https://clojurians.zulipchat.com/#narrow/stream/events"}}
 
    :support-channels
    {:youtube-subscribe       {:url  "https://www.youtube.com/channel/UCLsiVY-kWVH1EqgEtZiREJw?sub_confirmation=1"
-                              :logo "https://raw.githubusercontent.com/practicalli/graphic-design/live/practicalli-youtube-channel-subscribe.png"}
+                              :logo "https://raw.githubusercontent.com/practicalli/graphic-design/live/buttons/practicalli-youtube-channel-subscribe-button.png"}
     :github-sponsors         {:url  "https://github.com/sponsors/practicalli-john/"
-                              :logo "https://raw.githubusercontent.com/practicalli/graphic-design/live/practicalli-github-sponsors-button.png"}
+                              :logo "https://raw.githubusercontent.com/practicalli/graphic-design/live/buttons/practicalli-github-sponsors-button.png"}
     :brompton-across-britain {:url  "https://brompton-across-britain.github.io/"
                               :logo "images/brompton-across-britain-bike.png"}
     :patreon                 {:url  "https://www.patreon.com/practicalli"
                               :logo "images/patreon-navy.png"}
     :paypal-me               {:url  "https://paypal.me/practicalli"
-                              :logo "https://raw.githubusercontent.com/practicalli/graphic-design/live/practicalli-paypal-me-button.png"}
+                              :logo "https://raw.githubusercontent.com/practicalli/graphic-design/live/buttons/practicalli-paypal-me-button.png"}
     :kickstarter             {:url  "/"
                               :logo "images/kickstarter-logo.jpeg"}
     :clojurists-together     {:url  "https://www.clojuriststogether.org/"
