@@ -51,6 +51,13 @@
     :description " - use Clojure with Apache Kafka to build immutable event stream services. Define specifications to validate data consumed and produced to Kafka topics. Use Jackdaw library to control Kafka and write Kafka Stream applications"
     :status      :alpha}
 
+   {:title       "Practicalli Engineering Playbook"
+    :url         "https://practical.li/engineering-playbook"
+    :image       "https://raw.githubusercontent.com/practicalli/graphic-design/live/book-covers/practicalli-neovim-book-banner.png"
+    :github-repo "engineering-playbook"
+    :description " - Specific guides to common engineering tasks, including architecture, build tools, code quality, documentation and version control"
+    :status      :alpha}
+
    #_{:title       ""
       :url         ""
       :image       ""
