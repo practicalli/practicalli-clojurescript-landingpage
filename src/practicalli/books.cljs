@@ -58,6 +58,13 @@
     :description " - Specific guides to common engineering tasks, including architecture, build tools, code quality, documentation and version control"
     :status      :alpha}
 
+   {:title       "Practicalli VSpaceCode"
+    :url         "https://practical.li/engineering-playbook"
+    :image       "https://raw.githubusercontent.com/practicalli/graphic-design/live/book-covers/practicalli-neovim-book-banner.png"
+    :github-repo "engineering-playbook"
+    :description " - Install and Clojure development workflow with VSpaceCode and Calva, proving a full keyboard driven experience to REPL driven development"
+    :status      :alpha}
+
    #_{:title       ""
       :url         ""
       :image       ""
