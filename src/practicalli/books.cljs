@@ -6,43 +6,50 @@
     :url         "https://practical.li/spacemacs"
     :image       "https://raw.githubusercontent.com/practicalli/graphic-design/live/book-covers/practicalli-spacemacs-book-banner.png"
     :github-repo "spacemacs"
-    :description " - powerful editing with Emacs and Vim multi-modal editing, with a mnemonic menu that simplifies the learning curve.  Install a full Clojure development experience with two Git commands."}
+    :description " - powerful editing with Emacs and Vim multi-modal editing, with a mnemonic menu that simplifies the learning curve.  Install a full Clojure development experience with two Git commands."
+    :status      :established}
 
    {:title       "Practicalli Neovim"
     :url         "https://practical.li/neovim"
     :image       "https://raw.githubusercontent.com/practicalli/graphic-design/live/book-covers/practicalli-neovim-book-banner.png"
     :github-repo "neovim"
-    :description " - Neovim for effective Clojure development with Conjure and Clojure LSP (nvim-treesitter). With a mnemonic menu to simplify the learning curve."}
+    :description " - Neovim for effective Clojure development with Conjure and Clojure LSP (nvim-treesitter). With a mnemonic menu to simplify the learning curve."
+    :status      :new}
 
    {:title       "Practicalli Clojure"
     :url         "https://practical.li/clojure"
     :image       "https://raw.githubusercontent.com/practicalli/graphic-design/live/book-covers/practicalli-clojure-book-banner-light.png"
     :github-repo "clojure"
-    :description " - learn the Clojure language through REPL driven development using Clojure CLI tools (deps.edn). Use a rich set of community tools, including Rebel readline Terminal UI, Portal and Reveal data browsers and tools to manage all aspects of Clojure projects. Practice Clojure by solving challenges with examples of different approaches.  Encode the design and avoid regressions by writing unit tests and specifications for generative testing."}
+    :description " - learn the Clojure language through REPL driven development using Clojure CLI tools (deps.edn). Use a rich set of community tools, including Rebel readline Terminal UI, Portal and Reveal data browsers and tools to manage all aspects of Clojure projects. Practice Clojure by solving challenges with examples of different approaches.  Encode the design and avoid regressions by writing unit tests and specifications for generative testing."
+    :status      :rewrite}
 
    {:title       "Clojure Web Services"
     :url         "https://practical.li/clojure-web-services"
     :image       "https://raw.githubusercontent.com/practicalli/graphic-design/live/book-covers/practicalli-clojure-web-service-book-banner-light.png"
     :github-repo "clojure-web-services"
-    :description " - build production level server-side web services, micro-services and API's in Clojure.  Using Ring as an abstraction over HTTP with requests and responses as simple Clojure hash-maps. Routing of requests are managed by Compojure or Reitit, passing requests to handers which are Clojure functions. Data formats are managed by coercion and content negotiation. OpenAPI (swagger) is used for self-documenting APIs"}
+    :description " - build production level server-side web services, micro-services and API's in Clojure.  Using Ring as an abstraction over HTTP with requests and responses as simple Clojure hash-maps. Routing of requests are managed by Compojure or Reitit, passing requests to handers which are Clojure functions. Data formats are managed by coercion and content negotiation. OpenAPI (swagger) is used for self-documenting APIs"
+    :status      :rewrite}
 
    {:title       "Practicalli ClojureScript"
     :url         "https://practical.li/clojurescript"
     :image       "https://raw.githubusercontent.com/practicalli/graphic-design/live/book-covers/practicalli-clojurescript-book-banner-alpha.png"
     :github-repo "clojurescript"
-    :description " - build single page apps (SPA's), dynamic UI's and mobile apps with responsive design. Figwheel-main provides instant feedback during development, pushing changes to the browser as they are saved. Reagent library is an interface to React, driving UI components (functions) with immutable Clojure data structures."}
+    :description " - build single page apps (SPA's), dynamic UI's and mobile apps with responsive design. Figwheel-main provides instant feedback during development, pushing changes to the browser as they are saved. Reagent library is an interface to React, driving UI components (functions) with immutable Clojure data structures."
+    :status      :alpha}
 
    {:title       "Practicalli Clojure Data Science"
     :url         "https://practical.li/clojure-data-science"
     :image       "https://raw.githubusercontent.com/practicalli/graphic-design/live/book-covers/practicalli-clojure-data-science-book-banner-alpha.png"
     :github-repo "clojure-data-science"
-    :description " - discover Clojure tools and techniques when working with data science related projects. Ingest data from various sources into Clojure data structures. Transform Clojure data structures using fast and efficient community libraries. Visualise data to communicate meaning from data sets"}
+    :description " - discover Clojure tools and techniques when working with data science related projects. Ingest data from various sources into Clojure data structures. Transform Clojure data structures using fast and efficient community libraries. Visualise data to communicate meaning from data sets"
+    :status      :alpha}
 
    {:title       "Practicalli Clojure with Kafka"
     :url         "https://practical.li/clojure-kafka"
     :image       "https://raw.githubusercontent.com/practicalli/graphic-design/live/book-covers/practicalli-clojure-kafka-book-banner-alpha.png"
     :github-repo "clojure-kafka"
-    :description " - use Clojure with Apache Kafka to build immutable event stream services. Define specifications to validate data consumed and produced to Kafka topics. Use Jackdaw library to control Kafka and write Kafka Stream applications"}
+    :description " - use Clojure with Apache Kafka to build immutable event stream services. Define specifications to validate data consumed and produced to Kafka topics. Use Jackdaw library to control Kafka and write Kafka Stream applications"
+    :status      :alpha}
 
    #_{:title       ""
       :url         ""
