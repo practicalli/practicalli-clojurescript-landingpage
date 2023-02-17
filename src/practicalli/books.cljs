@@ -65,12 +65,19 @@
     :description " - Install and Clojure development workflow with VSpaceCode and Calva, proving a full keyboard driven experience to REPL driven development"
     :status      :alpha}
 
+   {:title       "Practicalli Emacs Doom"
+    :url         "https://practical.li/emacs-doom"
+    :image       "https://raw.githubusercontent.com/practicalli/graphic-design/live/book-covers/practicalli-neovim-book-banner.png"
+    :github-repo "emacs-doom"
+    :description " - Install and Clojure development workflow with Doom Emacs and CIDER"
+    :status      :alpha}
+
    #_{:title       ""
       :url         ""
       :image       ""
       :github-repo ""
+      :status      :alpha
       :description ""}])
-
 
 (defn generator-book-list
   [books]
