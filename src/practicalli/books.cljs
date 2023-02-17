@@ -116,6 +116,42 @@
                  (str "https://img.shields.io/github/issues-pr/practicalli/" github-repo "?style=for-the-badge&color=yellow&label=pull%20requests")
                  :alt "Content ideas as GitHub issues"}]]]]]]]))
 
+(defn generator-alpha-book-list
+  [books]
+  (for [{:keys [title description url github-repo]} books]
+
+    [:div {:class "column"}
+     [:div {:class "box"}
+      [:div {:class "columns"}
+
+       ;; Book banner logo
+       #_[:div {:class "column"}
+          [:a {:href url :target "_blank"}
+           [:figure {:class "image"}
+            [:img {:src image}]]]]
+
+       ;; Book description
+       [:div {:class "column"}
+
+        [:p [:a {:href url :target "_blank" :class "has-text-weight-bold"}
+             title]
+         description]
+
+        [:p {:class "has-text-centered"}
+         [:a {:href   (str "https://github.com/practicalli/" github-repo "/commits")
+              :target "_blank"}
+          [:img {:src
+                 (str "https://img.shields.io/github/commit-activity/y/practicalli/" github-repo "?style=for-the-badge")
+                 :alt "Monthly commits on GitHub"}]]
+         [:a {:href   (str "https://github.com/practicalli/" github-repo "/issues")
+              :target "_blank"}
+          [:img {:src (str "https://img.shields.io/github/issues/practicalli/" github-repo "?style=for-the-badge&color=purple&label=content%20ideas")
+                 :alt "Content ideas as GitHub issues"}]]
+         [:a {:href   (str "https://github.com/practicalli/" github-repo "/pulls")
+              :target "_blank"}
+          [:img {:src
+                 (str "https://img.shields.io/github/issues-pr/practicalli/" github-repo "?style=for-the-badge&color=yellow&label=pull%20requests")
+                 :alt "Content ideas as GitHub issues"}]]]]]]]))
 
 (defn book-list
   [books]
