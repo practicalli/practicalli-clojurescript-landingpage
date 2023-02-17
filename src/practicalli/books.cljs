@@ -155,11 +155,18 @@
 
 (defn book-list
   [books]
-  [:div {:class "container"}
-   [:div {:class "box"}
+  (let [released-books (remove #(= :alpha (:status %)) books)
+        alpha-books (filter #(= :alpha (:status %)) books)]
+    [:div {:class "container"}
+     [:div {:class "box"}
 
-    ;; Section Title
-    [:div {:class "column"}
-     [:h2 {:class "title has-text-centered"}
-      "Freely available online books"]]
-    (generator-book-list books)]])
+      ;; Section Title
+      [:div {:class "column"}
+       [:h2 {:class "title has-text-centered"}
+        "Freely available online books"]]
+      (generator-book-list released-books)
+
+      [:div {:class "column"}
+       [:h2 {:class "title has-text-centered"}
+        "Books under development"]]
+      (generator-alpha-book-list alpha-books)]]))
