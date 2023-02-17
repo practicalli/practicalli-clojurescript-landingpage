@@ -16,7 +16,7 @@
 
    {:title       "Practicalli Clojure"
     :url         "https://practical.li/clojure"
-    :image       "https://raw.githubusercontent.com/practicalli/graphic-design/live/book-covers/practicalli-clojure-book-banner.png"
+    :image       "https://raw.githubusercontent.com/practicalli/graphic-design/live/book-covers/practicalli-clojure-book-banner-light.png"
     :github-repo "clojure"
     :description " - learn the Clojure language through REPL driven development using Clojure CLI tools (deps.edn). Use a rich set of community tools, including Rebel readline Terminal UI, Portal and Reveal data browsers and tools to manage all aspects of Clojure projects. Practice Clojure by solving challenges with examples of different approaches.  Encode the design and avoid regressions by writing unit tests and specifications for generative testing."}
 
