@@ -55,21 +55,21 @@
     :url         "https://practical.li/engineering-playbook"
     :image       "https://raw.githubusercontent.com/practicalli/graphic-design/live/book-covers/practicalli-neovim-book-banner.png"
     :github-repo "engineering-playbook"
-    :description " - Specific guides to common engineering tasks, including architecture, build tools, code quality, documentation and version control"
+    :description "Specific guides to common engineering tasks, including architecture, build tools, code quality, documentation and version control"
     :status      :alpha}
 
    {:title       "Practicalli VSpaceCode"
-    :url         "https://practical.li/engineering-playbook"
+    :url         "https://practical.li/vspacecode"
     :image       "https://raw.githubusercontent.com/practicalli/graphic-design/live/book-covers/practicalli-neovim-book-banner.png"
-    :github-repo "engineering-playbook"
-    :description " - Install and Clojure development workflow with VSpaceCode and Calva, proving a full keyboard driven experience to REPL driven development"
+    :github-repo "vspacecode"
+    :description "Install and Clojure development workflow with VSpaceCode and Calva, proving a full keyboard driven experience to REPL driven development"
     :status      :alpha}
 
-   {:title       "Practicalli Emacs Doom"
-    :url         "https://practical.li/emacs-doom"
+   {:title       "Practicalli Doom Emacs"
+    :url         "https://practical.li/doom-emacs"
     :image       "https://raw.githubusercontent.com/practicalli/graphic-design/live/book-covers/practicalli-neovim-book-banner.png"
-    :github-repo "emacs-doom"
-    :description " - Install and Clojure development workflow with Doom Emacs and CIDER"
+    :github-repo "doom-emacs"
+    :description "Install and Clojure development workflow with Doom Emacs and CIDER"
     :status      :alpha}
 
    #_{:title       ""
