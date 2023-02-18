@@ -72,6 +72,13 @@
     :description "Install and Clojure development workflow with Doom Emacs and CIDER"
     :status      :alpha}
 
+   {:title       "Practicalli Amazon Web Services"
+    :url         "https://practical.li/amazon-web-services/"
+    :image       ""
+    :github-repo "amazon-web-services"
+    :description "Clojure development with Amazon Web Services"
+    :status      :alpha}
+
    #_{:title       ""
       :url         ""
       :image       ""
