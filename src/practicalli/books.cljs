@@ -44,7 +44,7 @@
     :description " - discover Clojure tools and techniques when working with data science related projects. Ingest data from various sources into Clojure data structures. Transform Clojure data structures using fast and efficient community libraries. Visualise data to communicate meaning from data sets"
     :status      :alpha}
 
-   {:title       "Practicalli Clojure with Kafka"
+   #_{:title       "Practicalli Clojure with Kafka"
     :url         "https://practical.li/clojure-kafka"
     :image       "https://raw.githubusercontent.com/practicalli/graphic-design/live/book-covers/practicalli-clojure-kafka-book-banner-alpha.png"
     :github-repo "clojure-kafka"
