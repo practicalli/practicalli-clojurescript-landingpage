@@ -14,7 +14,7 @@
       <div id="app">
           <div class="container">
               <h1 class="title is-1">Loading the application, hold on tight!</h1>
-              <!-- Totally redundant page loading progress indicator -->
+              <!-- Placeholder page loading progress indicator -->
               <progress class="progress is-large is-primary" max="100"></progress>
           </div>
       </div> <!-- end of app div -->
@@ -32,6 +32,16 @@
              nav.classList.toggle('is-active');
          });
      })();
+    </script>
+
+    <!-- Google Analytics -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LN54DR45NQ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-LN54DR45NQ');
     </script>
   </body>
 </html>
