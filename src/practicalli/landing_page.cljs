@@ -1,13 +1,15 @@
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; Practicalli Website
-;;
-;; A ClojureScript single page app with reagent
-;; Created with Leinigen figwheel-main template
+;; ---------------------------------------------------------
+;; Practicalli Landing Page
 ;; https://practical.li/
+;;
+;; ClojureScript project with reagent
+;; - hash-maps for common data
+;; - functions for reagent components
+;; - Bulma.io CSS library for styles
 ;;
 ;; Author(s): John Stevenson
 ;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; ---------------------------------------------------------
 
 
 (ns ^:figwheel-hooks practicalli.landing-page
@@ -21,15 +23,17 @@
    [practicalli.data    :as data]))
 
 
-;; simple debug statement for each build
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; ---------------------------------------------------------
+;; Tooling / Debug
 
 (println (js/Date.) "Reloading: src/practicalli_landing_page.cljs")
 
+;; End of Tooling / Debug
+;; ---------------------------------------------------------
 
-;; Website structure
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+;; ---------------------------------------------------------
+;; Web page structure
 
 (defn main-page
   "The layout of components on the main page."
@@ -58,11 +62,12 @@
    [content/level-separator "resources"]
    [content/resources]])
 
+;; End of Web page structure
+;; ---------------------------------------------------------
 
 
-
-;; System configuration code
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; ---------------------------------------------------------
+;; System Configuration
 
 (defn get-app-element []
   (gdom/getElement "app"))
@@ -84,4 +89,7 @@
   ;; optionally touch your app-state to force rerendering depending on
   ;; your application
   ;; (swap! app-state update-in [:__figwheel_counter] inc)
-)
+  )
+
+;; End of System Configuration
+;; ---------------------------------------------------------
