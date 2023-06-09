@@ -25,12 +25,8 @@
 # Column the target description is printed from
 HELP-DESCRIPTION-SPACING := 24
 
-# Example variables (not currently used)
-SWAGGER-EDITOR-DOCKER-IMAGE := swaggerapi/swagger-editor
-DOCKER-FRAUD-API-SERVICE := fraud-api-service
-
 # Makefile file and directory name wildcard
-EDN-FILES := $(wildcard *.edn)
+# EDN-FILES := $(wildcard *.edn)
 
 # ------------------------------------ #
 
@@ -51,21 +47,20 @@ help:  ## Describe available tasks in Makefile
 
 repl:  ## Run Clojure REPL with rich terminal UI (Rebel Readline)
 	$(info --------- Run Rebel REPL ---------)
-	clojure -M:env/figwheel:build/dev 
+	clojure -M:figwheel/env:build/dev
 
-
-deps: deps.edn  ## Prepare dependencies for test and dist targets
-	$(info --------- Download libraries to test and build the service ---------)
-	clojure -P -X:env/test:package/uberjar
+# deps: deps.edn  ## Prepare dependencies for test and dist targets
+# 	$(info --------- Download libraries to test and build the service ---------)
+# 	clojure -P -X:test/env:package/uberjar
 
 build:
 	$(info --------- Build and Package Clojure service ---------)
-	clojure -M:env/figwheel:build/dev
+	clojure -M:figwheel/env:build/dev
 
 dist:  ## Build and package Clojure service
 	$(info --------- Build and Package Clojure service ---------)
 	$(info Prerequisites newer than target)
-	clojure -M:env/figwheel:build/minify
+	clojure -M:figwheel/env:build/minify
 
 
 # Remove files and directories after build tasks
