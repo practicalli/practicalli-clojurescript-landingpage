@@ -11,7 +11,7 @@
 
    {:title       "Practicalli Neovim"
     :url         "https://practical.li/neovim"
-    :image       "https://raw.githubusercontent.com/practicalli/graphic-design/live/book-covers/practicalli-neovim-book-banner.png"
+    :image       "https://raw.githubusercontent.com/practicalli/graphic-design/live/book-covers/practicalli-neovim-book-banner-astronvim.png"
     :github-repo "neovim"
     :description " - Neovim for effective Clojure development with Conjure and Clojure LSP (nvim-treesitter). With a mnemonic menu to simplify the learning curve."
     :status      :new}
