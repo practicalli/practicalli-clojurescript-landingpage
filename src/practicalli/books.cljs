@@ -65,12 +65,13 @@
     :description "Install and Clojure development workflow with VSpaceCode and Calva, proving a full keyboard driven experience to REPL driven development"
     :status      :alpha}
 
-   {:title       "Practicalli Doom Emacs"
-    :url         "https://practical.li/doom-emacs"
-    :image       "https://raw.githubusercontent.com/practicalli/graphic-design/live/book-covers/practicalli-neovim-book-banner.png"
-    :github-repo "doom-emacs"
-    :description "Install and Clojure development workflow with Doom Emacs and CIDER"
-    :status      :alpha}
+   ;; Not actively supported (or working with Practicalli Emacs build on Linux)
+   #_{:title       "Practicalli Doom Emacs"
+      :url         "https://practical.li/doom-emacs"
+      :image       "https://raw.githubusercontent.com/practicalli/graphic-design/live/book-covers/practicalli-neovim-book-banner.png"
+      :github-repo "doom-emacs"
+      :description "Install and Clojure development workflow with Doom Emacs and CIDER"
+      :status      :alpha}
 
    {:title       "Practicalli Amazon Web Services"
     :url         "https://practical.li/amazon-web-services/"
